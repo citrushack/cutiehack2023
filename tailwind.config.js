@@ -9,8 +9,15 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["var(--font-poppins)"],
+        karla: ["var(--font-karla)"],
       },
       colors: {
+        cutie: {
+          "blue-100": "#93BEFF",
+          "blue-200": "#506D98",
+          "blue-300": "#314664",
+          orange: "#FFB682",
+        },
         hackathon: {
           "blue-100": "#38A3A5",
           "blue-200": "#22577A",
