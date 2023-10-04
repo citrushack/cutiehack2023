@@ -6,9 +6,7 @@ const Digits = ({ time, text }) => {
       ? Math.ceil(time / (1000 * 60 * 60 * 24))
       : text == "hours"
       ? Math.ceil((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-      : text == "minutes"
-      ? Math.ceil((time % (1000 * 60 * 60)) / (1000 * 60))
-      : 0;
+      : text == "minutes" && Math.ceil((time % (1000 * 60 * 60)) / (1000 * 60));
 
   return (
     <div className="flex flex-col items-center ml-3 md:ml-5 gap-2">
@@ -26,13 +24,13 @@ const Digits = ({ time, text }) => {
 };
 
 const CountDown = () => {
-  const [diffTime, setDiffTIme] = useState(
-    new Date("January 13, 2024 12:00:00") - new Date()
+  const [time, setTime] = useState(
+    new Date("November 4, 2023 12:00:00") - new Date()
   );
 
   useEffect(() => {
     const interval = setInterval(
-      () => setDiffTIme(new Date("November 4, 2023 12:00:00") - new Date()),
+      () => setTime(new Date("November 4, 2023 12:00:00") - new Date()),
       1000
     );
 
@@ -41,9 +39,9 @@ const CountDown = () => {
 
   return (
     <div className="flex">
-      <Digits time={diffTime} text="days" />
-      <Digits time={diffTime} text="hours" />
-      <Digits time={diffTime} text="minutes" />
+      <Digits time={time} text="days" />
+      <Digits time={time} text="hours" />
+      <Digits time={time} text="minutes" />
     </div>
   );
 };
