@@ -27,7 +27,7 @@ const Dashboard = () => {
         <Col xl={6} className="h-full">
           <User user={user} setUser={setUser} edit={edit} setEdit={setEdit} />
         </Col>
-        {user.status.participants === "accept" && (
+        {user.roles.participants === 1 && (
           <Col xl={5} className="h-full">
             <Team user={user} team={user.team} setUser={setUser} />
           </Col>
