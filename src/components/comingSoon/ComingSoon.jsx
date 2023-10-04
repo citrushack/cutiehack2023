@@ -3,6 +3,7 @@ import logo from "../../../public/logo.svg";
 import shine from "../../../public/shine.svg";
 import submarine from "../../../public/submarine.svg";
 import CountDown from "./CountDown";
+
 const ComingSoon = () => {
   return (
     <div className="relative font-karla w-full text-white">
