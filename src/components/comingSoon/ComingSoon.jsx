@@ -7,14 +7,14 @@ import CountDown from "./CountDown";
 const ComingSoon = () => {
   return (
     <div className="relative font-karla w-full text-white">
-      <Image src={shine} className="w-full" />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="flex flex-col w-1/3">
+      <Image src={shine} className="absolute w-full inset-0" />
+      <div className="relative flex items-center justify-center pt-8 md:pt-20">
+        <div className="flex flex-col w-1/2 md:w-1/3">
           <Image src={logo} />
-          <p className="ml-10 mb-1 text-6xl text-white font-bold">
+          <p className="md:ml-10 mb-1 text-2xl md:text-6xl text-white font-bold">
             COMING SOON
           </p>
-          <p className="ml-10 text-3xl text-cutie-orange font-bold">
+          <p className="md:ml-10 text-xl md:text-3xl text-cutie-orange font-bold">
             November 4th, 2023
           </p>
           <CountDown />
