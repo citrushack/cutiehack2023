@@ -11,7 +11,7 @@
 
 ## Figma
 
-[Cutiehacks 2023](https://www.figma.com/file/9jJ2taHhunGbj5VcDlcDul/ui-ux-team?type=design&node-id=510%3A2&mode=design&t=4tIBCxSlTCHz3Lf3-1)
+[Cutiehack](https://www.figma.com/file/9jJ2taHhunGbj5VcDlcDul/ui-ux-team?type=design&node-id=510%3A2&mode=design&t=4tIBCxSlTCHz3Lf3-1)
 
 ## Node.js
 
