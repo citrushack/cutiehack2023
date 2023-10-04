@@ -15,7 +15,7 @@
 
 ## Node.js
 
-Engineers Without Borders Official Website runs on Node.js Version 16.17.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+Cutiehack runs on Node.js Version 16.17.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
 ## Next.js
 
@@ -26,7 +26,24 @@ This project is built using [Next.js](https://nextjs.org), a React framework. Ne
 The following environment variables are required and must be stored in an `.env` file:
 
 ```env
-N/A
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+
+NEXT_PUBLIC_FIREBASE_CLIENT_EMAIL=
+NEXT_PUBLIC_FIREBASE_PRIVATE_KEY=
+NEXT_PUBLIC_GOOGLE_CLIENT_ID=
+NEXT_PUBLIC_GOOGLE_CLIENT_SECRET=
+
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=
+NEXT_PUBLIC_URL=
+
+NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY=
+NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL=
 ```
 
 ## Commands
