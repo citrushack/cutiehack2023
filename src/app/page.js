@@ -1,4 +1,3 @@
-"use client";
 import Release from "@/components/Release";
 import ComingSoon from "@/components/comingSoon/ComingSoon";
 import { RELEASES } from "@/data/Release";
