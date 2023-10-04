@@ -1,5 +1,4 @@
 "use client";
-// import LoginButton from "@/components/LoginButton";
 import Release from "@/components/Release";
 import ComingSoon from "@/components/live/ComingSoon";
 import { RELEASES } from "@/data/Release";
@@ -10,7 +9,6 @@ const Home = () => {
       <Release release={RELEASES.comingsoon}>
         <ComingSoon />
       </Release>
-      {/* <LoginButton /> */}
     </div>
   );
 };
