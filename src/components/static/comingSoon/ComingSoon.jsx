@@ -1,7 +1,7 @@
 import Image from "next/image";
-import logo from "../../../../public/logo.svg";
-import shine from "../../../../public/shine.svg";
-import submarine from "../../../../public/submarine.svg";
+import logo from "../../../../public/svg/logo.svg";
+import shine from "../../../../public/svg/shine.svg";
+import submarine from "../../../../public/svg/submarine.svg";
 import CountDown from "../Countdown";
 
 const ComingSoon = () => {
