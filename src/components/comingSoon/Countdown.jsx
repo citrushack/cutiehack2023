@@ -18,7 +18,7 @@ const Digits = ({ value, text }) => {
   );
 };
 
-const CountDown = () => {
+const Countdown = () => {
   const [time, setTime] = useState({});
 
   useEffect(() => {
@@ -44,4 +44,4 @@ const CountDown = () => {
   );
 };
 
-export default CountDown;
+export default Countdown;
