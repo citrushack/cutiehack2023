@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import LOGO from "../../public/LOGO.png";
+import LOGO from "../../public/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { ADMIN, USER } from "@/data/Navigation";
@@ -51,9 +51,6 @@ const Navigation = () => {
                 className=" scale-90"
                 alt={`${CONFIG.name} Logo`}
               />
-              <p className="text-white font-bold text-lg pr-2 m-0">
-                {CONFIG.name.toUpperCase()}
-              </p>
             </div>
             <div className="w-full flex flex-col items-center h-full p-0">
               {Object.entries(tabs).map(
