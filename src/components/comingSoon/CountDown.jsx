@@ -19,7 +19,7 @@ const Digits = ({ value, text }) => {
 };
 
 const CountDown = () => {
-  const [time, setTime] = useState(null);
+  const [time, setTime] = useState({});
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -36,13 +36,11 @@ const CountDown = () => {
   }, []);
 
   return (
-    time && (
-      <div className="flex">
-        {Object.entries(time).map(([text, value], index) => (
-          <Digits key={index} text={text} value={value} />
-        ))}
-      </div>
-    )
+    <div className="flex">
+      {Object.entries(time).map(([text, value], index) => (
+        <Digits key={index} text={text} value={value} />
+      ))}
+    </div>
   );
 };
 

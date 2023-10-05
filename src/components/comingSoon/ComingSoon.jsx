@@ -2,7 +2,7 @@ import Image from "next/image";
 import logo from "../../../public/logo.svg";
 import shine from "../../../public/shine.svg";
 import submarine from "../../../public/submarine.svg";
-import CountDown from "./CountDown";
+import CountDown from "./Countdown";
 
 const ComingSoon = () => {
   return (
