@@ -17,6 +17,9 @@ module.exports = {
           "blue-200": "#506D98",
           "blue-300": "#314664",
           orange: "#FFB682",
+          "gray-100": "#F8F8F8",
+          "gray-200": "#D9D9D9",
+          "gray-300": "#6B6B6B",
         },
         hackathon: {
           "blue-100": "#38A3A5",
