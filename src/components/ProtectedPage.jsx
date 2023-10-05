@@ -55,7 +55,7 @@ const ProtectedPage = ({ title, children, restrictions }) => {
         <>
           <Navigation />
           <title>{title}</title>
-          <div className="flex justify-center items-start w-full bg-hackathon-page z-0 h-screen pt-12 lg:pt-0">
+          <div className="flex justify-center items-start w-full bg-cutie-blue-300 z-0 h-screen pt-12 lg:pt-0">
             <div
               className={`${
                 pathName.startsWith("/forms") ? "w-full" : "w-11/12"
