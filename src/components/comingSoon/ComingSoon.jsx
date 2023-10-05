@@ -7,8 +7,8 @@ import CountDown from "./Countdown";
 const ComingSoon = () => {
   return (
     <div className="relative font-karla w-full text-white">
-      <Image src={shine} className="absolute w-full inset-0" />
-      <div className="relative flex items-center justify-center pt-8 md:pt-20">
+      <Image src={shine} className="absolute w-full inset-0 z-0" />
+      <div className="relative flex items-center justify-center pt-8 md:pt-20 z-10">
         <div className="flex flex-col w-1/2">
           <Image src={logo} />
           <p className="justify-self-end text-2xl md:text-6xl text-white font-bold">
