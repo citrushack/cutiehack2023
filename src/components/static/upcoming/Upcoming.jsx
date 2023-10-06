@@ -4,7 +4,7 @@ import shine from "../../../../public/svg/shine.svg";
 import submarine from "../../../../public/svg/submarine.svg";
 import CountDown from "../Countdown";
 
-const ComingSoon = () => {
+const Upcoming = () => {
   return (
     <div className="relative font-karla w-full text-white">
       <Image src={shine} className="absolute w-full inset-0 z-0" />
@@ -25,4 +25,4 @@ const ComingSoon = () => {
   );
 };
 
-export default ComingSoon;
+export default Upcoming;
