@@ -1,5 +1,5 @@
 import Release from "@/components/Release";
-import ComingSoon from "@/components/static/comingSoon/ComingSoon";
+import ComingSoon from "@/components/static/upcoming/Upcoming";
 import { RELEASES } from "@/data/Release";
 
 const Home = () => {
