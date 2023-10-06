@@ -28,9 +28,9 @@ const Countdown = () => {
         days: Math.ceil(diff / (1000 * 60 * 60 * 24)),
         hours: Math.ceil((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
         minutes: Math.ceil((diff % (1000 * 60 * 60)) / (1000 * 60)),
-      }),
-        1000;
-    });
+        seconds: Math.ceil((diff % (1000 * 60 * 60)) / 1000) % 60,
+      });
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
