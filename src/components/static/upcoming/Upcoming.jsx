@@ -1,10 +1,10 @@
 import Image from "next/image";
-import logo from "../../../public/logo.svg";
-import shine from "../../../public/shine.svg";
-import submarine from "../../../public/submarine.svg";
-import CountDown from "./Countdown";
+import logo from "../../../../public/svg/logo.svg";
+import shine from "../../../../public/svg/shine.svg";
+import submarine from "../../../../public/svg/submarine.svg";
+import CountDown from "../Countdown";
 
-const ComingSoon = () => {
+const Upcoming = () => {
   return (
     <div className="relative font-karla w-full text-white">
       <Image src={shine} className="absolute w-full inset-0 z-0" />
@@ -25,4 +25,4 @@ const ComingSoon = () => {
   );
 };
 
-export default ComingSoon;
+export default Upcoming;
