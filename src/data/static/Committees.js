@@ -1,4 +1,4 @@
-export const committees = {
+export const COMMITTEES = {
   "UI/UX": [
     "Josalyn Chow",
     "Garman Zhen",
