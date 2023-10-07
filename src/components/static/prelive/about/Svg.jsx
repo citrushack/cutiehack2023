@@ -1,5 +1,5 @@
-const Svg = () => {
+const SVG = () => {
   return <div>Svg</div>;
 };
 
-export default Svg;
+export default SVG;
