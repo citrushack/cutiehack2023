@@ -7,6 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "jiggle-3s": "jiggle 3s ease-in-out infinite",
+        "jiggle-4s": "jiggle 4s ease-in-out infinite",
+        "jiggle-5s": "jiggle 5s ease-in-out infinite",
+        "jiggle-5.5s": "jiggle 5.5s ease-in-out infinite",
+      },
+      keyframes: {
+        jiggle: {
+          "0%": { transform: "translate(0)" },
+          "50%": { transform: "translate(0px, 15px)" },
+        },
+      },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
         karla: ["var(--font-karla)"],
