@@ -8,7 +8,7 @@ import Link from "../Link";
 
 const Upcoming = () => {
   return (
-    <div className="relative font-karla w-full text-white min-h-screen flex flex-col items-center justify-center">
+    <div className="relative font-karla w-full text-white min-h-screen flex flex-col items-center justify-center bg-cutie-blue-300">
       <Image src={shine} className="absolute w-full inset-0 z-0" />
       <div className="flex z-10 justify-center h-fit items-stretch w-10/12 sm:w-5/6 2xl:w-2/3">
         <div className="flex flex-col w-3/5 items-start">

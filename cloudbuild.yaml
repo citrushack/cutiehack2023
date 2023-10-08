@@ -21,6 +21,7 @@ steps:
       - "NEXTAUTH_SECRET=${_NEXTAUTH_SECRET}"
       - "NEXTAUTH_URL=${_NEXTAUTH_URL}"
       - "SENDGRID_API_KEY=${_SENDGRID_API_KEY}"
+      - "NODE_ENV=${_NODE_ENV}"
   - name: gcr.io/cloud-builders/docker
     args:
       - build
