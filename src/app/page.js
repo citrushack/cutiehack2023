@@ -1,14 +1,26 @@
-import Release from "@/components/Release";
+import Release from "@/components/static/Release";
+import RELEASES from "@/data/Releases";
+import Live from "@/components/static/live/Live";
+import Postlive from "@/components/static/postlive/Postlive";
+import Prelive from "@/components/static/prelive/Prelive";
 import Upcoming from "@/components/static/upcoming/Upcoming";
-import { RELEASES } from "@/data/Release";
 
 const Home = () => {
   return (
-    <div className="bg-cutie-blue-300 w-full">
-      <Release release={RELEASES.comingsoon}>
+    <>
+      <Release release={RELEASES.STATIC.UPCOMING}>
         <Upcoming />
       </Release>
-    </div>
+      <Release release={RELEASES.STATIC.PRELIVE}>
+        <Prelive />
+      </Release>
+      <Release release={RELEASES.STATIC.LIVE}>
+        <Live />
+      </Release>
+      <Release release={RELEASES.STATIC.POSTLIVE}>
+        <Postlive />
+      </Release>
+    </>
   );
 };
 
