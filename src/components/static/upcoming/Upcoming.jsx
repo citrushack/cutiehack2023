@@ -15,7 +15,7 @@ const Upcoming = () => {
             COMING SOON
           </p>
           <p className="text-xl md:text-3xl text-cutie-orange font-bold">
-            November 4th, 2023
+            November 18th, 2023
           </p>
           <CountDown />
         </div>
