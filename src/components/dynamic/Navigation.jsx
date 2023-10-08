@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import LOGO from "../../public/svg/logo.svg";
+import LOGO from "../../../public/svg/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { ADMIN, USER } from "@/data/dynamic/Navigation";

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { CONFIG } from "@/data/Config";
+import release from "@/data/Releases";
 
 const Digits = ({ value, text }) => {
   return (
@@ -23,7 +23,7 @@ const Countdown = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const diff = CONFIG.date - new Date();
+      const diff = release.STATIC.LIVE.START - new Date();
       setTime({
         days: Math.ceil(diff / (1000 * 60 * 60 * 24)),
         hours: Math.ceil((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
