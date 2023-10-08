@@ -49,7 +49,7 @@ const DEV = {
 const PRODUCTION = {
   STATIC: {
     UPCOMING: {
-      START: new Date("10/09/2023"),
+      START: new Date("10/08/2023"),
       END: new Date("10/25/2024"),
     },
     PRELIVE: {
