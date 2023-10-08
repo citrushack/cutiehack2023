@@ -19,8 +19,9 @@ const Upcoming = () => {
           <p className="w-fit text-2xl sm:text-4xl md:text-6xl 2xl:text-9xl text-white font-bold mb-1">
             COMING SOON
           </p>
-          <p className="w-fit text-xl md:text-3xl 2xl:text-6xl text-cutie-orange font-bold">
-            November 4th, 2023
+
+          <p className="text-xl md:text-3xl text-cutie-orange font-bold">
+            November 18th, 2023
           </p>
         </div>
         <div className="w-2/5 h-full mt-5 relative">
