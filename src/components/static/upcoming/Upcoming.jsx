@@ -6,7 +6,7 @@ import CountDown from "../Countdown";
 
 const Upcoming = () => {
   return (
-    <div className="relative font-karla w-full text-white">
+    <div className="relative font-karla w-full text-white bg-cutie-blue-300">
       <Image src={shine} className="absolute w-full inset-0 z-0" />
       <div className="relative flex items-center justify-center pt-8 md:pt-20 z-10">
         <div className="flex flex-col w-1/2">
