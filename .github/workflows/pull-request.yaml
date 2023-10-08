@@ -54,6 +54,7 @@ jobs:
       NEXT_PUBLIC_GOOGLE_CLIENT_SECRET: ${{secrets.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET}}
       NEXTAUTH_SECRET: ${{secrets.NEXTAUTH_SECRET}}
       NEXTAUTH_URL: ${{secrets.NEXTAUTH_URL}}
+      NODE_ENV: "dev"
   testing:
     runs-on: ubuntu-latest
     steps:
@@ -81,3 +82,4 @@ jobs:
       NEXT_PUBLIC_GOOGLE_CLIENT_SECRET: ${{secrets.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET}}
       NEXTAUTH_SECRET: ${{secrets.NEXTAUTH_SECRET}}
       NEXTAUTH_URL: ${{secrets.NEXTAUTH_URL}}
+      NODE_ENV: "dev"
