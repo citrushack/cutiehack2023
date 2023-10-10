@@ -19,7 +19,12 @@ const Digits = ({ value, text }) => {
 };
 
 const Countdown = () => {
-  const [time, setTime] = useState({});
+  const [time, setTime] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
