@@ -4,7 +4,6 @@ import shine from "../../../../public/svg/shine.svg";
 import submarine from "../../../../public/svg/submarine.svg";
 import bubble from "../../../../public/svg/bubble.svg";
 import CountDown from "../Countdown";
-import Link from "../Link";
 
 const Upcoming = () => {
   return (
@@ -50,7 +49,6 @@ const Upcoming = () => {
       <div className="z-10 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
         <div className="flex flex-col items-center w-fit">
           <CountDown />
-          <Link text="Sponsor" link="https://www.google.com/" />
         </div>
       </div>
     </div>
