@@ -95,4 +95,4 @@ const PRODUCTION = {
   },
 };
 
-export default process.env.NODE_ENV === "production" ? PRODUCTION : DEV;
+export default process.env.NODE_ENV === "ready" ? PRODUCTION : DEV;
