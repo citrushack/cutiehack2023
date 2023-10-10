@@ -6,7 +6,9 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
     setupNodeEvents(on, config) {},
   },
-
+  env: {
+    NODE_ENV: "dev",
+  },
   component: {
     devServer: {
       framework: "next",

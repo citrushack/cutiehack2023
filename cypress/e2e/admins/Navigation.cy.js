@@ -1,6 +1,6 @@
 describe("Admin Portal Navigation", () => {
   it("Visit Participants Page", () => {
-    cy.log(process.env.NODE_ENV, process.env);
+    cy.log(Cypress.env(), process.env);
     cy.fetch({
       role: "admins",
       portal: "admins",
