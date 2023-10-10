@@ -100,6 +100,7 @@ export const FIELDS = {
     width: 12,
     field: "diet",
     options: DIETS,
+    text: "Dietary Restrictions",
   },
 
   resume: {
