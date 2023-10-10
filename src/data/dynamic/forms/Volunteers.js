@@ -75,10 +75,18 @@ export const FIELDS = {
     text: "Availability",
     required: true,
     options: [
+      "Friday Morning",
       "Saturday Morning",
+      "Sunday Morning",
+      "Friday Afternoon",
       "Saturday Afternoon",
+      "Sunday Afternoon",
+      "Friday Evening",
       "Saturday Evening",
+      "Sunday Evening",
+      "Friday Night",
       "Saturday Night",
+      "Sunday Night",
     ],
   },
   gender: {

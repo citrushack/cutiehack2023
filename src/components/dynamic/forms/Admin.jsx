@@ -25,7 +25,7 @@ const Admin = () => {
       fields={FIELDS}
       object={admin}
       setObject={setAdmin}
-      header="ADMIN ACCESS"
+      header="ADMIN PORTAL REQUEST"
       onSubmit={handleSubmit}
     />
   );

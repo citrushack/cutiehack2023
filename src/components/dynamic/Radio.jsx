@@ -18,7 +18,7 @@ const Radio = ({ text, field, options, user, setUser, editable = true }) => {
               onClick={() => handleClick(option)}
             >
               {option === user[field] ? (
-                <BsCircleFill className="mx-1 w-3.5 h-3.5 text-white border p-0.5 rounded-full border-white" />
+                <BsCircleFill className="mx-1 w-3.5 h-3.5 text-hackathon-green-300 border-[1.5px] p-0.5 rounded-full border-black" />
               ) : (
                 <BsCircle className="mx-1 h-3.5 w-3.5" />
               )}

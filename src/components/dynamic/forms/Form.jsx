@@ -52,7 +52,12 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
   return (
     <div className="w-full h-full overflow-scroll flex flex-col items-center font-poppins">
       <div className="w-10/12 md:w-1/3 my-5 flex flex-col items-center justify-cente">
-        <Image src={logo} alt="Hackathon Logo" className="w-2/5" />
+        <Image
+          src={logo}
+          alt="Hackathon Logo"
+          className="w-3/5 border-b-[1px] border-white"
+        />
+        <p className="text-white font-karla text-xl">Registeration</p>
         <p className="text-xl bg-cutie-blue-100/20 text-white font-semibold px-4 py-3 rounded-t-xl m-0 w-full mt-3 font-karla">
           {header}
         </p>
@@ -111,7 +116,7 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
                             },
                           })
                         }
-                        color="bg-cutie-blue-100/20"
+                        color="bg-hackathon-green-300"
                       />
                     ))}
                   </>

@@ -32,7 +32,7 @@ const Participant = () => {
       fields={FIELDS}
       object={participant}
       setObject={setParticipant}
-      header="PARTICIPANT APPLICATION"
+      header="HACKER APPLICATION"
       onSubmit={handleSubmit}
     />
   );
