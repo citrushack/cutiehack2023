@@ -1,5 +1,5 @@
 import { MAJORS, GRADES, GENDERS, SHIRTS } from "./Information";
-import { AVAILABILITY } from "./Helper";
+import { AVAILABILITY } from "./Availability";
 
 export const FIELDS = {
   description: {
