@@ -15,7 +15,7 @@ const Radio = ({
     <div className="flex flex-col">
       <p className="mb-1 font-semibold">
         {text}
-        <span className="text-red-500">{required && " *"}</span>
+        {required && <span className="text-hackathon-green-300">*</span>}
       </p>
       {!editable && <div className="pl-3">{user[field]}</div>}
       {editable && (
@@ -26,14 +26,13 @@ const Radio = ({
               key={index}
               onClick={() => handleClick(option)}
             >
-              <div className="rounded-full w-4 border-white border aspect-square bg-transparent p-[2px] mr-1">
+              <div className="rounded-full w-4 border-white border aspect-square bg-transparent p-0.5 mr-1">
                 <div
                   className={`rounded-full w-full aspect-square duration-100 ${
                     option === user[field] ? "bg-white" : "bg-transparent"
                   }`}
                 />
               </div>
-
               {option}
             </div>
           ))}

@@ -19,12 +19,12 @@ export const TAGS = [
     value: 1,
   },
   {
-    text: "reject",
-    value: -1,
-  },
-  {
     text: "pending",
     value: 0,
+  },
+  {
+    text: "reject",
+    value: -1,
   },
 ];
 
@@ -52,4 +52,17 @@ export const STATUSES = {
   1: "accepted",
   0: "pending",
   "-1": "rejected",
+};
+
+export const AUTH = {
+  POST: {},
+  GET: {
+    admins: 1,
+  },
+  PUT: {
+    admins: 1,
+  },
+  DELETE: {
+    admins: 1,
+  },
 };

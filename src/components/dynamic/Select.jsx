@@ -1,19 +1,20 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { useState } from "react";
-const Toggle = ({ onClick, show, user, field, placeholder }) => {
+
+const Toggle = ({ onClick, user, field, show, placeholder }) => {
   return (
     <button
       onClick={onClick}
-      id="dropdown-toggle"
-      className={`!bg-transparent ${
-        user[field] ? "text-white" : "!text-hackathon-gray-200"
-      } w-full !text-left !border-x-0 !border-t-0 !border-b-[1px] !rounded-none !border-white py-1 justify-between flex items-center`}
+      className={`${
+        user[field] ? "text-white" : "text-hackathon-gray-200"
+      } flex items-center justify-between w-full border-b-2 border-white`}
+      data-cy="select-toggle"
     >
       {user[field] || placeholder}
       <RiArrowDownSLine
-        className={`${show && "rotate-180"} duration-300`}
-        data-cy="dropdown-arrow"
+        className={`${show && "rotate-180"} duration-300 text-white`}
+        data-cy="select-arrow"
       />
     </button>
   );
@@ -33,25 +34,30 @@ const Select = ({
     <div className="flex flex-col">
       <p className="mb-1 font-semibold">
         {title}
-        <span className="text-red-500">{required && " *"}</span>
+        {required && <span className="text-hackathon-green-300">*</span>}
       </p>
-      <Dropdown onToggle={() => setShow(!show)} className="w-full m-0">
+      <Dropdown
+        show={show}
+        className="w-full m-0"
+        onToggle={() => setShow(!show)}
+        autoClose={true}
+        data-cy="select"
+      >
         {editable ? (
           <Dropdown.Toggle
             show={show}
             as={Toggle}
             user={user}
-            placeholder={placeholder}
             field={field}
+            placeholder={placeholder}
           />
         ) : (
           <div
-            id="dropdown-toggle"
             className={`placeholder:text-hackathon-gray-200 ${
               user[field] ? "text-white" : "!text-hackathon-placeholder"
             } w-full pl-3 !border-x-0 !border-t-0 ${
               editable ? "!border-b-2" : "border-0"
-            } !rounded-none !border-black`}
+            } !rounded-none !border-white`}
           >
             {user[field] || placeholder}
           </div>
