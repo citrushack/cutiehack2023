@@ -15,12 +15,12 @@ export const FILTERS = {
 
 export const TAGS = [
   {
-    text: "pending",
-    value: 0,
-  },
-  {
     text: "confirm",
     value: 1,
+  },
+  {
+    text: "pending",
+    value: 0,
   },
   {
     text: "not attending",
@@ -56,6 +56,22 @@ export const HEADERS = [
     },
   },
 ];
+
+export const AUTH = {
+  POST: {},
+  GET: {
+    admins: 1,
+    committees: 1,
+  },
+  PUT: {
+    admins: 1,
+    committees: 1,
+  },
+  DELETE: {
+    admins: 1,
+    committees: 1,
+  },
+};
 
 export const STATUSES = {
   1: "accepted",
