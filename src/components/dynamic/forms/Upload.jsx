@@ -33,7 +33,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
     <div className="flex flex-col">
       <p className="mb-0 font-semibold">
         {text}
-        <span className="text-hackathon-green-300">{required && " *"}</span>
+        <span className="text-red-500">{required && " *"}</span>
       </p>
       <div className="flex items-center w-full flex-col" data-cy="upload">
         {!file && (
@@ -72,7 +72,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
               {file.name}
             </div>
             <FaTimes
-              className="text-white hover:cursor-pointer"
+              className="text-white hover:cursor-pointer hover:!text-red-500"
               onClick={() => setFile(null)}
               data-cy="upload-cancel"
             />

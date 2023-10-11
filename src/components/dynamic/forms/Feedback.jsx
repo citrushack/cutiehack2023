@@ -12,7 +12,7 @@ const Feedback = () => {
       fields={FIELDS}
       object={feedback}
       setObject={setfeedback}
-      header="feedback APPLICATION"
+      header="FEEDBACK"
     />
   );
 };

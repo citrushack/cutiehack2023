@@ -33,7 +33,7 @@ const Select = ({
     <div className="flex flex-col">
       <p className="mb-1 font-semibold">
         {title}
-        <span className="text-hackathon-green-300">{required && " *"}</span>
+        <span className="text-red-500">{required && " *"}</span>
       </p>
       <Dropdown onToggle={() => setShow(!show)} className="w-full m-0">
         {editable ? (
@@ -57,10 +57,10 @@ const Select = ({
           </div>
         )}
         {editable && (
-          <Dropdown.Menu className="w-full !bg-black/50 backdrop-blur-sm !border-none !rounded-none !p-0 overflow-y-auto max-h-[35vh]">
+          <Dropdown.Menu className="w-full !bg-cutie-blue-300 backdrop-blur-sm !border-none !rounded-none !p-0 overflow-y-auto max-h-[35vh]">
             {options.map((option, index) => (
               <Dropdown.Item
-                className=" hover:!bg-cutie-blue-200 !bg-gradient-to-r from-black/20 overflow-hidden !text-white"
+                className=" hover:!bg-cutie-blue-200  overflow-hidden !text-white"
                 key={index}
                 onClick={() => setUser({ ...user, [field]: option })}
               >
