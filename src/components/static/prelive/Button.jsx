@@ -5,7 +5,7 @@ const Button = ({ text, onClick }) => {
   const words = text.split(" ");
   const last = words.pop();
   return (
-    <div className="flex text-2xl font-bold items-center">
+    <div className="text-2xl font-bold items-center">
       <p>
         {words.join(" ")}{" "}
         <span
