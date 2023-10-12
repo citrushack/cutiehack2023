@@ -126,7 +126,6 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
                             },
                           })
                         }
-                        color="bg-hackathon-green-300"
                       />
                     ))}
                   </>

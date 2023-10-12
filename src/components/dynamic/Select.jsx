@@ -7,13 +7,13 @@ const Toggle = ({ onClick, user, field, show, placeholder }) => {
     <button
       onClick={onClick}
       className={`${
-        user[field] ? "text-black" : "text-hackathon-gray-200"
-      } bg-white flex items-center justify-between w-full border-b-2 border-black`}
+        user[field] ? "text-white" : "text-hackathon-gray-200"
+      } flex items-center justify-between w-full border-b-2 border-white`}
       data-cy="select-toggle"
     >
       {user[field] || placeholder}
       <RiArrowDownSLine
-        className={`${show && "rotate-180"} duration-300 text-black`}
+        className={`${show && "rotate-180"} duration-300 text-white`}
         data-cy="select-arrow"
       />
     </button>
@@ -54,19 +54,19 @@ const Select = ({
         ) : (
           <div
             className={`placeholder:text-hackathon-gray-200 ${
-              user[field] ? "text-black" : "!text-hackathon-placeholder"
+              user[field] ? "text-white" : "!text-hackathon-placeholder"
             } w-full pl-3 !border-x-0 !border-t-0 ${
               editable ? "!border-b-2" : "border-0"
-            } !rounded-none !border-black`}
+            } !rounded-none !border-white`}
           >
             {user[field] || placeholder}
           </div>
         )}
         {editable && (
-          <Dropdown.Menu className="w-full bg-hackathon-green-100 !border-none !rounded-none !p-0 overflow-y-auto max-h-[35vh]">
+          <Dropdown.Menu className="w-full !bg-cutie-blue-300 backdrop-blur-sm !border-none !rounded-none !p-0 overflow-y-auto max-h-[35vh]">
             {options.map((option, index) => (
               <Dropdown.Item
-                className=" hover:!bg-hackathon-green-200 !bg-hackathon-green-100 overflow-hidden"
+                className=" hover:!bg-cutie-blue-200  overflow-hidden !text-white"
                 key={index}
                 onClick={() => setUser({ ...user, [field]: option })}
               >
