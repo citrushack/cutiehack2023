@@ -102,6 +102,7 @@ export const FIELDS = {
     field: "diet",
     options: DIETS,
     text: "Dietary Restrictions",
+    required: false,
   },
 
   resume: {
