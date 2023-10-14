@@ -15,11 +15,11 @@ const Radio = ({
     <div className="flex flex-col">
       <p className="mb-1 font-semibold">
         {text}
-        {required && <span className="text-hackathon-green-300">*</span>}
+        {required && <span className="text-red-500">*</span>}
       </p>
       {!editable && <div className="pl-3">{user[field]}</div>}
       {editable && (
-        <div className="grid grid-flow-row grid-cols-2 md:grid-cols-3 w-full">
+        <div className="grid grid-cols-2 md:grid-cols-3 w-full">
           {options.map((option, index) => (
             <div
               className="flex items-center whitespace-nowrap hover:cursor-pointer"
