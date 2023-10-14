@@ -1,6 +1,6 @@
 import { BsCheckLg } from "react-icons/bs";
 
-const Checkbox = ({ toggle, onClick = () => {}, text = "", color }) => {
+const Checkbox = ({ toggle, onClick = () => {}, text = "" }) => {
   return (
     <div
       className="flex items-center hover:cursor-pointer w-fit"
