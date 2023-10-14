@@ -52,7 +52,7 @@ const CustomToolbar = ({
           classes="mx-2"
         />
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center text-white">
         <FaChevronLeft
           onClick={() => onNavigate("PREV")}
           className="hover:cursor-pointer mx-2"
