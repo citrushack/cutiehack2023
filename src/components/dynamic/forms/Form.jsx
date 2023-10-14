@@ -102,7 +102,7 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
                     <p className="mb-1 font-semibold">
                       {field.text}
                       {field.required && (
-                        <span className="text-hackathon-green-300">*</span>
+                        <span className="text-red-500">*</span>
                       )}
                     </p>
                     {field.options.map((option, i) => (
