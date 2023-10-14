@@ -11,6 +11,7 @@ const Textarea = ({
   setUser,
   maxLength,
   editable = false,
+  required,
 }) => {
   const [edit, setEdit] = useState(false);
 
@@ -24,7 +25,10 @@ const Textarea = ({
 
   return (
     <div className="flex flex-col">
-      <p className="mb-1 font-semibold">{title}</p>
+      <p className="mb-1 font-semibold">
+        {title}
+        {required && <span className="text-hackathon-green-300">*</span>}
+      </p>
       {editable && !edit && (
         <FaPencil className="hover:cursor-pointer" onClick={handleEdit} />
       )}
@@ -34,7 +38,7 @@ const Textarea = ({
       <textarea
         data-cy={`${title}-textarea`}
         disabled={editable && !edit}
-        className="border-2 border-black pl-3 w-full focus:outline-none placeholder:text-hackathon-gray-200 resize-none"
+        className="border-[1px] mt-2 border-white bg-transparent rounded-lg px-3 py-2 w-full focus:outline-none placeholder:text-hackathon-gray-200 resize-none"
         name={name}
         placeholder={placeholder}
         value={value}

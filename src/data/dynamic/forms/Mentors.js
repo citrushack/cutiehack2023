@@ -1,4 +1,5 @@
 import { MAJORS, GRADES, GENDERS, SHIRTS } from "./Information";
+import { AVAILABILITY } from "./Availability";
 
 export const FIELDS = {
   description: {
@@ -73,20 +74,7 @@ export const FIELDS = {
     field: "availability",
     text: "Availability",
     required: true,
-    options: [
-      "Friday Morning",
-      "Saturday Morning",
-      "Sunday Morning",
-      "Friday Afternoon",
-      "Saturday Afternoon",
-      "Sunday Afternoon",
-      "Friday Evening",
-      "Saturday Evening",
-      "Sunday Evening",
-      "Friday Night",
-      "Saturday Night",
-      "Sunday Night",
-    ],
+    options: Object.values(AVAILABILITY).map((time) => time.text),
   },
   gender: {
     input: "radio",
@@ -114,6 +102,7 @@ export const FIELDS = {
     required: true,
   },
   requirements: {
+    text: "Terms and Conditions",
     input: "checkboxes",
     width: 12,
     field: "requirements",
@@ -123,4 +112,17 @@ export const FIELDS = {
       "I understand that I will attend the event in person.",
     ],
   },
+};
+
+export const ATTRIBUTES = {
+  name: "",
+  email: "",
+  phone: "",
+  discord: "",
+  major: "",
+  grade: "",
+  availability: {},
+  gender: "",
+  shirt: "",
+  response: "",
 };

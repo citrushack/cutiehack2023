@@ -18,12 +18,12 @@ export const TAGS = [
     value: 1,
   },
   {
-    text: "disqualify",
-    value: -1,
-  },
-  {
     text: "pending",
     value: 0,
+  },
+  {
+    text: "disqualify",
+    value: -1,
   },
 ];
 
@@ -40,6 +40,19 @@ export const HEADERS = [
     hasTag: true,
   },
 ];
+
+export const AUTH = {
+  POST: {},
+  GET: {
+    admins: 1,
+  },
+  PUT: {
+    admins: 1,
+  },
+  DELETE: {
+    admins: 1,
+  },
+};
 
 export const STATUSES = {
   1: "accepted",

@@ -1,7 +1,7 @@
 export const COLORS = {
   green: {
-    bg: "bg-hackathon-green-300",
-    text: "text-gray-800",
+    bg: "bg-cutie-blue-100",
+    text: "text-cutie-blue-300",
     border: "border-0",
   },
   grayOutline: {

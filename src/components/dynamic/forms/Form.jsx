@@ -10,6 +10,8 @@ import Textarea from "@/components/dynamic/forms/Textarea.jsx";
 import Upload from "@/components/dynamic/forms/Upload";
 import toast from "react-hot-toast";
 import { useState } from "react";
+import logo from "../../../../public/svg/logo.svg";
+import Image from "next/image";
 
 const Form = ({ object, setObject, header, fields, onSubmit }) => {
   const [loading, setLoading] = useState(false);
@@ -49,18 +51,29 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
   };
   return (
     <div className="w-full h-full overflow-scroll flex flex-col items-center font-poppins">
-      <div className="w-10/12 md:w-1/3 my-5">
-        <p className="text-xl bg-hackathon-green-300 font-semibold px-4 py-2 rounded-t-xl m-0">
+      <div className="w-10/12 md:w-1/3 my-5 flex flex-col items-center justify-cente">
+        <Image src={logo} alt="Hackathon Logo" className="w-2/5" />
+        <p className="text-xl bg-cutie-blue-100/20 text-white font-semibold px-4 py-3 rounded-t-xl m-0 w-full mt-3 font-karla">
           {header}
         </p>
-        <div className="rounded-b-xl bg-white p-3">
+        <div className="rounded-b-xl bg-cutie-gray-300/20 p-3 text-white font-karla">
           <Row className="flex justify-center p-0 m-0 gap-3">
             {Object.values(fields).map((field, index) => (
               <Col key={index} md={field.width}>
                 {field.input === "description" &&
                   field.texts.map((description, index) => (
-                    <p key={index}>{description}</p>
+                    <>
+                      <p key={index}>{description}</p>
+                      {index === field.texts.length - 1 && (
+                        <p>
+                          Fields with
+                          <span className="text-hackathon-green-300"> * </span>
+                          are required.
+                        </p>
+                      )}
+                    </>
                   ))}
+
                 {field.input === "input" && (
                   <Input
                     name={field.name}
@@ -88,7 +101,12 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
                 )}
                 {field.input === "checkboxes" && (
                   <>
-                    <p className="mb-1 font-semibold">{field.text}</p>
+                    <p className="mb-1 font-semibold">
+                      {field.text}
+                      {field.required && (
+                        <span className="text-hackathon-green-300">*</span>
+                      )}
+                    </p>
                     {field.options.map((option, i) => (
                       <Checkbox
                         className="w-1/2"
@@ -108,7 +126,6 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
                             },
                           })
                         }
-                        color="bg-hackathon-green-300"
                       />
                     ))}
                   </>
