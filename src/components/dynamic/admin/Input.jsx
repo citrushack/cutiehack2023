@@ -16,7 +16,9 @@ const Input = ({
 
   return (
     <div className={`flex items-center ${classes}`}>
-      {showLabel && <p className="text-lg font-extrabold mr-2 my-0">{label}</p>}
+      {showLabel && (
+        <p className="text-lg font-extrabold mr-2 my-0 text-white">{label}</p>
+      )}
 
       <div className="flex items-center my-1 bg-white rounded-md w-full">
         <input
