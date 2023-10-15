@@ -57,7 +57,7 @@ const Table = ({
   ) : (
     <div className="w-full rounded-xl overflow-hidden flex flex-col">
       {modal && <Modal data={modal} setModal={setModal} />}
-      <div className="w-full py-2 text-sm flex text-white bg-hackathon-blue-200 justify-evenly px-0 m-0">
+      <div className="w-full py-2 text-sm flex bg-cutie-blue-100/30 justify-evenly px-0 m-0">
         <div className="w-1/12" />
         {headers.map((header, index) => (
           <div
@@ -82,7 +82,7 @@ const Table = ({
       </div>
       <Accordion
         data-cy="table"
-        className="h-full overflow-y-scroll w-full bg-white"
+        className="h-full overflow-y-scroll w-full bg-white/10 text-white font-karla"
       >
         {objects.map(
           (object, index) =>
@@ -91,7 +91,7 @@ const Table = ({
                 data-cy={object.uid}
                 key={index}
                 className={`first:border-0 border-t border-hackathon-gray-100 w-full grid grid-cols-1 py-2 ${
-                  object.selected ? "bg-green-100" : "bg-white"
+                  object.selected ? "bg-cutie-blue-100/30" : "bg-transparent"
                 }`}
               >
                 <div className="flex justify-between items-center">
@@ -114,7 +114,7 @@ const Table = ({
                             header.text === "name" && "font-bold flex"
                           }`}
                         >
-                          {header.hasTag && (
+                          {header.hasTag && object[header.text] !== "" && (
                             <div data-cy={header.text}>
                               <Tag
                                 text={
@@ -190,7 +190,7 @@ const Table = ({
         )}
 
         {objects.filter((object) => !object.hidden).length === 0 && (
-          <p className="text-hackathon-gray-300 font-poppins pt-3 text-center rounded-b-2xl w-full">
+          <p className="text-gray-400 font-poppins pt-3 text-center rounded-b-2xl w-full">
             {empty}
           </p>
         )}
