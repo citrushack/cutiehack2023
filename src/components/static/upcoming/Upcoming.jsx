@@ -4,6 +4,7 @@ import shine from "../../../../public/svg/shine.svg";
 import submarine from "../../../../public/svg/submarine.svg";
 import bubble from "../../../../public/svg/bubble.svg";
 import CountDown from "../Countdown";
+import Apply from "../prelive/Apply";
 
 const Upcoming = () => {
   return (
@@ -50,6 +51,7 @@ const Upcoming = () => {
         <div className="flex flex-col items-center w-fit">
           <CountDown />
         </div>
+        <Apply text="Mentor" link="/forms/mentors" />
       </div>
     </div>
   );
