@@ -21,7 +21,7 @@ const CheckinPage = () => {
   return (
     <div className="flex w-full flex-col h-[calc(100vh-48px)]">
       <div className="pb-3 pt-4">
-        <Title title="Check In" />
+        <Title title="CHECK IN" />
       </div>
       <div className="flex flex-col h-full lg:flex-row">
         <div className="flex flex-col items-center m-auto">
