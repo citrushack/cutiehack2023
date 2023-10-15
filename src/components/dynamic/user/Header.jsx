@@ -32,7 +32,7 @@ const Header = ({ horizontal = true }) => {
           width={125}
           height={125}
           alt="Picture of user's profile"
-          className="rounded-full overflow-hidden border-2 border-white"
+          className="rounded-full overflow-hidden border-4 border-white"
         />
       </div>
       <div className="align-left text-white font-karla">
