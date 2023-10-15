@@ -34,7 +34,6 @@ const Filters = ({ filters, setFilters, setObjects, objects, input }) => {
           className="flex justify-center"
           key={index}
           onClick={() => handleClick(filter)}
-          data-cy={filter + "-filter"}
         >
           <div
             className={`rounded hover:opacity-70 duration-300 ${
@@ -42,6 +41,7 @@ const Filters = ({ filters, setFilters, setObjects, objects, input }) => {
                 ? "text-cutie-blue-100 bg-white"
                 : "text-white bg-cutie-blue-200"
             } cursor-pointer flex items-center justify-between w-full`}
+            data-cy={filter + "-filter"}
           >
             <p className="my-0 mx-1 px-2 py-[2px] whitespace-nowrap">
               {filter}
