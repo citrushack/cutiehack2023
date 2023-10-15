@@ -29,7 +29,7 @@ export default function RootLayout({ children, session }) {
         className="h-full"
       >
         <body
-          className={`${poppins.variable} ${karla.variable} flex flex-col lg:flex-row h-full w-full`}
+          className={`${poppins.variable} ${karla.variable} flex flex-col lg:flex-row h-full w-full bg-cutie-blue-300`}
         >
           <Toaster />
           {children}
