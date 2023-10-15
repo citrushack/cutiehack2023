@@ -21,14 +21,10 @@ const Dashboard = () => {
     <div className="h-full font-poppins flex flex-col py-4 gap-3">
       <Title title="Dashboard" />
       <Header email={user.email} name={user.name} />
-      <div className="grid grid-cols-2 h-full overflow-scroll gap-3 justify-center">
-        <div className="h-full">
-          <User user={user} setUser={setUser} edit={edit} setEdit={setEdit} />
-        </div>
+      <div className="grid grid-cols-2 h-full gap-3 justify-center">
+        <User user={user} setUser={setUser} edit={edit} setEdit={setEdit} />
         {user.roles.participants === 1 && (
-          <div className="h-full">
-            <Team user={user} team={user.team} setUser={setUser} />
-          </div>
+          <Team user={user} team={user.team} setUser={setUser} />
         )}
       </div>
     </div>
