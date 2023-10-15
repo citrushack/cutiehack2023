@@ -20,19 +20,19 @@ const Input = ({
         <p className="text-lg font-extrabold mr-2 my-0 text-white">{label}</p>
       )}
 
-      <div className="flex items-center my-1 bg-white rounded-md w-full">
+      <div className="flex items-center my-1 bg-white/10 rounded-md w-full">
         <input
           data-cy={`${label}-input`}
           value={object[label]}
           maxLength={maxLength}
           placeholder={placeholder}
           type="text"
-          className="outline-none w-full font-poppins text-base py-1 bg-transparent px-2"
+          className="outline-none w-full font-poppins text-base py-1 bg-transparent px-2 text-white"
           onChange={handleInput}
         />
         {clear && (
           <MdCancel
-            className="hover:cursor-pointer text-xl text-hackathon-gray-300 mr-2 hover:text-hackathon-gray-200"
+            className="hover:cursor-pointer text-xl text-gray-400 mr-2 hover:text-hackathon-gray-200"
             onClick={() => setObject({ ...object, [label]: "" })}
             data-cy={`${label}-clear-input`}
           />

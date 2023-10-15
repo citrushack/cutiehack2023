@@ -39,8 +39,8 @@ const Filters = ({ filters, setFilters, setObjects, objects, input }) => {
           <div
             className={`rounded hover:opacity-70 duration-300 ${
               state
-                ? "text-white bg-hackathon-blue-100"
-                : "text-hackathon-blue-100 bg-white"
+                ? "text-cutie-blue-100 bg-white"
+                : "text-white bg-cutie-blue-200"
             } cursor-pointer flex items-center justify-between w-full`}
           >
             <p className="my-0 mx-1 px-2 py-[2px] whitespace-nowrap">
