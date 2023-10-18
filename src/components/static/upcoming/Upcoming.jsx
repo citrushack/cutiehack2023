@@ -4,6 +4,7 @@ import shine from "../../../../public/svg/shine.svg";
 import submarine from "../../../../public/svg/submarine.svg";
 import bubble from "../../../../public/svg/bubble.svg";
 import CountDown from "../Countdown";
+import FAQ from "@/components/static/prelive/faq/FAQ";
 
 const Upcoming = () => {
   return (
@@ -51,6 +52,7 @@ const Upcoming = () => {
           <CountDown />
         </div>
       </div>
+      <FAQ /> {/* just to view the component, will remove later*/}
     </div>
   );
 };
