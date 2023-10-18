@@ -19,7 +19,7 @@ const Upcoming = () => {
           <p className="w-fit text-2xl sm:text-4xl md:text-6xl 2xl:text-9xl text-white font-bold mb-1">
             COMING SOON
           </p>
-          <p className="text-xl md:text-3xl text-cutie-orange font-bold">
+          <p className="text-xl md:text-3xl text-cutie-orange font-bold my-3">
             November 18th, 2023
           </p>
         </div>
@@ -46,7 +46,7 @@ const Upcoming = () => {
           />
         </div>
       </div>
-      <div className="z-10 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
+      <div className="z-10 my-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
         <div className="flex flex-col items-center w-fit">
           <CountDown />
         </div>
