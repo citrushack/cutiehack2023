@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Header from "./Header";
 import Title from "../admin/Title.jsx";
 import Team from "./Team";
@@ -10,13 +10,7 @@ const Dashboard = () => {
   const { data: session } = useSession();
   const [user, setUser] = useState(session.user);
   const [edit, setEdit] = useState(false);
-  useEffect(() => {
-    const data = {};
-    user.diet.forEach((option) => {
-      data[option] = true;
-    });
-    setUser({ ...user, diet: data });
-  }, []);
+
   return (
     <div className="h-full font-poppins flex flex-col py-4 gap-3">
       <Title title="Dashboard" />

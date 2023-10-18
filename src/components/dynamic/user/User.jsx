@@ -94,30 +94,33 @@ const User = ({ user, setUser, edit, setEdit }) => {
         />
         <div>
           <p className="mb-1 font-semibold">Diet</p>
-          {edit
-            ? DIETS.map((option, index) => (
-                <Checkbox
-                  className="w-1/2"
-                  key={index}
-                  toggle={user.diet[option]}
-                  text={option}
-                  onClick={() =>
-                    setUser({
-                      ...user,
-                      diet: {
-                        ...user.diet,
-                        [option]: !user.diet[option],
-                      },
-                    })
-                  }
-                  color="bg-hackathon-green-300"
-                />
-              ))
-            : Object.keys(user.diet).map((diet, index) => (
-                <p className="pl-3 mb-1" key={index}>
-                  {diet}
-                </p>
-              ))}
+          {edit ? (
+            DIETS.map((option, index) => (
+              <Checkbox
+                className="w-1/2"
+                key={index}
+                toggle={user.diet.includes(option)}
+                text={option}
+                onClick={() =>
+                  setUser({
+                    ...user,
+                    diet: user.diet.includes(option)
+                      ? user.diet.filter((diet) => diet !== option)
+                      : [...user.diet, option],
+                  })
+                }
+                color="bg-cutie-green-100"
+              />
+            ))
+          ) : user.diet.length > 0 ? (
+            user.diet.map((diet, index) => (
+              <p className="pl-3 mb-1" key={index}>
+                {diet}
+              </p>
+            ))
+          ) : (
+            <p className="pl-3 mb-1">No diet restrictions</p>
+          )}
         </div>
       </div>
       <div className="w-full flex justify-center">
