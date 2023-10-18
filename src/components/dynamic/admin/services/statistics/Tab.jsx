@@ -4,7 +4,7 @@ const Tab = ({ title, value }) => {
       <div data-cy={`${title}-tab`} className="text-2xl font-medium">
         {title}
       </div>
-      <div data-cy={`${title}-value`} className="text-5xl font-extrabold">
+      <div data-cy={`${value}-value`} className="text-5xl font-extrabold">
         {value}
       </div>
     </div>
