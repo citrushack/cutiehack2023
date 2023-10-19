@@ -77,8 +77,8 @@ const Navigation = () => {
                           onClick={() => setExpand(false)}
                           className={`w-full flex [&>*]:text-white items-center justify-start py-1 pl-[10%] ${
                             pathName.endsWith(tab.link)
-                            ? "bg-cutie-green-100/50"
-                            : "[&>*]:hover:text-cutie-green-100 [&>*]:duration-200"
+                              ? "bg-cutie-green-100/50"
+                              : "[&>*]:hover:text-cutie-green-100 [&>*]:duration-200"
                           }`}
                         >
                           {tab.icon}
@@ -101,8 +101,8 @@ const Navigation = () => {
                   onClick={() => setExpand(false)}
                   className={`w-full flex [&>*]:text-white items-center justify-start pl-[10%] py-1 ${
                     pathName.endsWith(tab.link)
-                    ? "bg-cutie-green-100/50"
-                    : "[&>*]:hover:text-cutie-green-100 [&>*]:duration-200"
+                      ? "bg-cutie-green-100/50"
+                      : "[&>*]:hover:text-cutie-green-100 [&>*]:duration-200"
                   }`}
                 >
                   {tab.icon}
