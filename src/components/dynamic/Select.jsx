@@ -89,7 +89,7 @@ const Select = ({
               <input
                 value={input}
                 autoFocus
-                className="ml-3 my-1 mt-2 w-11/12 ring-0 outline-none px-2 py-1 bg-cutie-blue-100/40"
+                className="ml-3 my-1 mt-2 w-11/12 ring-0 outline-none px-2 py-1 bg-cutie-blue-100/20 text-white"
                 placeholder="search"
                 onChange={handleInput}
               />
