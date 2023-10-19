@@ -4,6 +4,7 @@ import shine from "../../../../public/svg/shine.svg";
 import submarine from "../../../../public/svg/submarine.svg";
 import bubble from "../../../../public/svg/bubble.svg";
 import CountDown from "../Countdown";
+import Apply from "../prelive/Apply";
 
 const Upcoming = () => {
   return (
@@ -46,9 +47,14 @@ const Upcoming = () => {
           />
         </div>
       </div>
-      <div className="z-10 my-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
+      <div className="z-10 mt-4 mb-2 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
         <div className="flex flex-col items-center w-fit">
           <CountDown />
+        </div>
+      </div>
+      <div className="z-10 mb-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
+        <div className="flex flex-col items-center w-fit">
+          <Apply text="Participant" link="/forms/participants" />
         </div>
       </div>
     </div>

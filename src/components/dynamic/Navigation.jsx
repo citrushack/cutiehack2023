@@ -38,16 +38,12 @@ const Navigation = () => {
         }`}
       >
         <div className="bg-white/10 h-full flex flex-col justify-between items-center w-full">
-          <div className="hidden lg:flex items-center my-3">
-            <Image
-              src={LOGO}
-              className="w-10 h-10 mx-2"
-              alt={`${CONFIG.name} Logo`}
-            />
-            <p className="text-white font-bold text-lg pr-2 m-0">
-              {CONFIG.name.toUpperCase()}
-            </p>
-          </div>
+          <Image
+            src={LOGO}
+            className="w-full px-3"
+            alt={`${CONFIG.name} Logo`}
+          />
+
           <div className="w-full flex flex-col items-center h-full">
             {Object.entries(tabs)
               .filter(([title]) => title !== " ")
@@ -77,8 +73,8 @@ const Navigation = () => {
                           onClick={() => setExpand(false)}
                           className={`w-full flex [&>*]:text-white items-center justify-start py-1 pl-[10%] ${
                             pathName.endsWith(tab.link)
-                            ? "bg-cutie-green-100/50"
-                            : "[&>*]:hover:text-cutie-green-100 [&>*]:duration-200"
+                              ? "bg-cutie-green-100/50"
+                              : "[&>*]:hover:text-cutie-green-100 [&>*]:duration-200"
                           }`}
                         >
                           {tab.icon}
@@ -101,8 +97,8 @@ const Navigation = () => {
                   onClick={() => setExpand(false)}
                   className={`w-full flex [&>*]:text-white items-center justify-start pl-[10%] py-1 ${
                     pathName.endsWith(tab.link)
-                    ? "bg-cutie-green-100/50"
-                    : "[&>*]:hover:text-cutie-green-100 [&>*]:duration-200"
+                      ? "bg-cutie-green-100/50"
+                      : "[&>*]:hover:text-cutie-green-100 [&>*]:duration-200"
                   }`}
                 >
                   {tab.icon}
