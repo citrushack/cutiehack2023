@@ -2,7 +2,7 @@ const Title = ({ title }) => {
   return (
     <div
       data-cy={`${title}-title`}
-      className="font-karla text-2xl pr-4 text-white"
+      className="text-2xl font-extrabold pr-5 text-white hidden lg:block"
     >
       {title}
     </div>

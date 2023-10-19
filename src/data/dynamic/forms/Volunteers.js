@@ -1,5 +1,4 @@
-import { MAJORS, GRADES, GENDERS, SHIRTS } from "./Information";
-import { AVAILABILITY } from "./Availability";
+import { MAJORS, GRADES, GENDERS, SHIRTS, AVAILABILITY } from "./Information";
 
 export const FIELDS = {
   description: {
@@ -75,7 +74,7 @@ export const FIELDS = {
     field: "availability",
     text: "Availability",
     required: true,
-    options: Object.values(AVAILABILITY).map((time) => time.text),
+    options: AVAILABILITY,
   },
   gender: {
     input: "radio",
