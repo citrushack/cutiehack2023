@@ -13,7 +13,7 @@ const Dashboard = () => {
 
   return (
     <div className="h-full font-poppins flex flex-col py-4 gap-3">
-      <Title title="Dashboard" />
+      <Title title="DASHBOARD" />
       <Header email={user.email} name={user.name} />
       <div className="grid grid-cols-2 h-full gap-3">
         <User user={user} setUser={setUser} edit={edit} setEdit={setEdit} />

@@ -1,6 +1,9 @@
 const Title = ({ title }) => {
   return (
-    <div data-cy={`${title}-title`} className="text-2xl font-karla pr-5">
+    <div
+      data-cy={`${title}-title`}
+      className="font-karla text-2xl pr-4 text-white"
+    >
       {title}
     </div>
   );

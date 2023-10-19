@@ -1,6 +1,6 @@
 const Tab = ({ title, value }) => {
   return (
-    <div className="text-center w-full text-white">
+    <div className="text-center w-full text-white font-karla">
       <div data-cy={`${title}-tab`} className="text-2xl font-medium">
         {title}
       </div>
