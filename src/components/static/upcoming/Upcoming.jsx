@@ -4,7 +4,7 @@ import shine from "../../../../public/svg/shine.svg";
 import submarine from "../../../../public/svg/submarine.svg";
 import bubble from "../../../../public/svg/bubble.svg";
 import CountDown from "../Countdown";
-import FAQ from "@/components/static/prelive/faq/FAQ";
+import Apply from "../prelive/Apply";
 
 const Upcoming = () => {
   return (
@@ -20,7 +20,7 @@ const Upcoming = () => {
           <p className="w-fit text-2xl sm:text-4xl md:text-6xl 2xl:text-9xl text-white font-bold mb-1">
             COMING SOON
           </p>
-          <p className="text-xl md:text-3xl text-cutie-orange font-bold">
+          <p className="text-xl md:text-3xl text-cutie-orange font-bold my-3">
             November 18th, 2023
           </p>
         </div>
@@ -47,12 +47,16 @@ const Upcoming = () => {
           />
         </div>
       </div>
-      <div className="z-10 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
+      <div className="z-10 mt-4 mb-2 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
         <div className="flex flex-col items-center w-fit">
           <CountDown />
         </div>
       </div>
-      <FAQ /> {/* just to view the component, will remove later*/}
+      <div className="z-10 mb-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
+        <div className="flex flex-col items-center w-fit">
+          <Apply text="Participant" link="/forms/participants" />
+        </div>
+      </div>
     </div>
   );
 };
