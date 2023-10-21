@@ -57,15 +57,21 @@ export const REQUIREMENTS = {
     text: "I understand that I will attend the event in person.",
   },
 };
+
 export const SOURCES = [
-  { name: "devpost", hidden: false },
-  { name: "ACM discord server", hidden: false },
-  { name: "hackathon tabling", hidden: false },
-  { name: "instagram", hidden: false },
-  { name: "twitter", hidden: false },
-  { name: "facebook", hidden: false },
+  { name: "Devpost", hidden: false },
+  { name: "Discord Announcements", hidden: false },
+  { name: "Tabling", hidden: false },
+  { name: "Instagram", hidden: false },
+  { name: "Email", hidden: false },
+  { name: "Other", hidden: false },
 ];
-export const JUDGE_AFFILIATION = ["Student", "Professor", "Industry"];
+
+export const JUDGE_AFFILIATION = [
+  { name: "Professor", hidden: false },
+  { name: "Student", hidden: false },
+  { name: "Industry", hidden: false },
+];
 
 export const AVAILABILITY = [
   "Friday Morning",

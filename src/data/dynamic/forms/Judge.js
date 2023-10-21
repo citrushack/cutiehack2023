@@ -93,7 +93,11 @@ export const FIELDS = {
     width: 12,
     field: "requirements",
     required: true,
-    options: ["I agree to photograph."],
+    options: [
+      "I consent to photographs being taken and being used for future marketing purposes",
+      "I consent to providing a safe space for hackers to learn and grow their interests in computing",
+      "I consent to following the provided guidelines and rules instructed by the Cutiehack organizing team",
+    ],
   },
 };
 
