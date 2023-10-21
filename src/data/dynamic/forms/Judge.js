@@ -7,8 +7,8 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Welcome to Cutiehack 2023. Thank you for considering to become a judge, we appreciate your efforts to help support Cutiehack. Cutiehack is a beginner oriented hackathon spanning 12 hours on November 18th.",
+      "Judging for Cutiehack will occur at the end of the event, where you will be responsible for visiting different teams and assessing their project on a variety of metrics including but not limited to idea proposal, technical challenge, overall presentation and more.",
     ],
   },
   name: {
