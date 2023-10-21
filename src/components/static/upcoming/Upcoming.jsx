@@ -5,6 +5,7 @@ import submarine from "../../../../public/svg/submarine.svg";
 import bubble from "../../../../public/svg/bubble.svg";
 import CountDown from "../Countdown";
 import Apply from "../prelive/Apply";
+import FAQ from "../prelive/faq/FAQ";
 
 const Upcoming = () => {
   return (
@@ -56,6 +57,7 @@ const Upcoming = () => {
         <div className="flex flex-col items-center w-fit">
           <Apply text="Participant" link="/forms/participants" />
         </div>
+        <FAQ />
       </div>
     </div>
   );

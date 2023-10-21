@@ -1,6 +1,7 @@
 "use client";
 import { FAQdata } from "@/data/static/FAQ";
 import { Accordion } from "react-bootstrap";
+import "./FAQ_styles.css";
 
 const FAQ = () => {
   return (
@@ -8,22 +9,8 @@ const FAQ = () => {
       {FAQdata.map((faq, index) => {
         return (
           <>
-            <Accordion.Item
-              eventKey={index}
-              style={{
-                border: "0px",
-                backgroundColor: "#48648C",
-              }}
-            >
-              <Accordion.Button
-                style={{
-                  borderWidth: "1px",
-                  backgroundColor: "#48648C",
-                  color: "white",
-                }}
-              >
-                {faq.question}
-              </Accordion.Button>
+            <Accordion.Item eventKey={index}>
+              <Accordion.Button>{faq.question}</Accordion.Button>
               <Accordion.Body className="text-white">
                 {faq.answer}
               </Accordion.Body>
