@@ -1,9 +1,9 @@
-const Title = ({
-  title,
-  classes = "text-2xl font-extrabold pr-[3%] text-white",
-}) => {
+const Title = ({ title }) => {
   return (
-    <div data-cy={`${title}-title`} className={`${classes} `}>
+    <div
+      data-cy={`${title}-title`}
+      className="text-2xl font-extrabold pr-5 text-white hidden lg:block"
+    >
       {title}
     </div>
   );

@@ -94,7 +94,7 @@ const Table = ({
                   object.selected ? "bg-cutie-blue-100/30" : "bg-transparent"
                 }`}
               >
-                <div className="flex justify-between items-center">
+                <div className="flex justify-start items-center">
                   <div
                     className="flex justify-center items-center w-1/12"
                     data-cy="select"

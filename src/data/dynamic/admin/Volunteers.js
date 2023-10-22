@@ -1,5 +1,5 @@
 import Checkbox from "@/components/dynamic/Checkbox";
-import { AVAILABILITY } from "../forms/Availability";
+import { AVAILABILITY } from "../form/Information";
 
 export const FILTERS = {
   pending: {
@@ -33,7 +33,7 @@ export const TAGS = [
 export const HEADERS = [
   { text: "name", size: "w-3/12", icon: true, sort: "off" },
   { text: "email", size: "w-3/12", icon: true, sort: "off" },
-  { text: "discord", size: "w-3/12", icon: true, sort: "off" },
+  { text: "discord", size: "w-2/12", icon: true, sort: "off" },
   {
     text: "status",
     size: "w-2/12",
@@ -41,13 +41,17 @@ export const HEADERS = [
     sort: "off",
     hasTag: true,
   },
+  {
+    text: "",
+    size: "w-1/12",
+  },
 ];
 
 export const DROPDOWN = ({ object }) => {
   return (
     <div className="flex justify-center">
-      <div className="grid grid-cols-4 w-11/12">
-        {Object.values(AVAILABILITY).map(({ text }, index) => (
+      <div className="grid grid-cols-3 w-11/12">
+        {AVAILABILITY.map((text, index) => (
           <Checkbox
             toggle={object.availability.includes(text)}
             text={text}

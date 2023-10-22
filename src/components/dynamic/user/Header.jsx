@@ -26,15 +26,17 @@ const Header = ({ horizontal = true }) => {
         horizontal ? "flex-row" : "flex-col"
       } items-center justify-center w-fit`}
     >
-      <Image
-        src={session.user.image}
-        width={125}
-        height={125}
-        alt="Picture of user's profile"
-        className="mr-4 rounded-full overflow-hidden"
-      />
-      <div className="align-left">
-        <p className="text-2xl font-bold mb-0">{session.user.name}</p>
+      <div className="border-[1px] border-white rounded-full p-1 w-fit mr-4">
+        <Image
+          src={session.user.image}
+          width={125}
+          height={125}
+          alt="Picture of user's profile"
+          className="rounded-full overflow-hidden border-4 border-white"
+        />
+      </div>
+      <div className="align-left text-white font-karla">
+        <p className="text-2xl mb-0">{session.user.name}</p>
         <p className="text-base mb-1">{session.user.email}</p>
         <Tag color={COLORS[color]} text={text} />
       </div>
