@@ -10,21 +10,21 @@ const Upcoming = () => {
   return (
     <div className="relative font-karla w-full text-white min-h-screen flex flex-col items-center justify-center bg-cutie-blue-300">
       <Image src={shine} alt="shine" className="absolute w-full inset-0 z-0" />
-      <div className="flex z-10 justify-center h-fit items-stretch w-10/12 sm:w-5/6 2xl:w-2/3">
-        <div className="flex flex-col w-3/5 items-start">
+      <div className="flex flex-col md:flex-row z-10 justify-center h-fit items-center md:items-stretch w-10/12 sm:w-5/6 2xl:w-2/3">
+        <div className="flex flex-col w-3/5 items-center md:items-start">
           <Image
             src={logo}
             alt="logo"
             className="w-9/12 sm:w-2/3 md:w-1/2 h-full object-contain"
           />
-          <p className="w-fit text-2xl sm:text-4xl md:text-6xl 2xl:text-9xl text-white font-bold mb-1">
+          <p className="w-fit text-2xl sm:text-4xl md:text-6xl 2xl:text-9xl text-white font-bold mb-0 md:mb-1">
             COMING SOON
           </p>
-          <p className="text-xl md:text-3xl text-cutie-orange font-bold my-3">
+          <p className="text-xl md:text-3xl text-cutie-orange font-bold my-1 md:my-3">
             November 18th, 2023
           </p>
         </div>
-        <div className="w-2/5 h-full mt-5 relative">
+        <div className="hidden md:block w-2/5 h-full relative">
           <Image
             src={submarine}
             alt="submarine"
@@ -48,13 +48,15 @@ const Upcoming = () => {
         </div>
       </div>
       <div className="z-10 mt-4 mb-2 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
-        <div className="flex flex-col items-center w-fit">
-          <CountDown />
-        </div>
+        <CountDown />
       </div>
       <div className="z-10 mb-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
-        <div className="flex flex-col items-center w-fit">
+        <div className="flex flex-col md:flex-row items-center gap-2 md:gap-3 w-fit">
           <Apply text="Participant" link="/forms/participants" />
+          <div className="flex items-center gap-3 w-fit">
+            <Apply text="Mentor" link="/forms/mentors" />
+            <Apply text="Volunteer" link="/forms/volunteers" />
+          </div>
         </div>
       </div>
     </div>
