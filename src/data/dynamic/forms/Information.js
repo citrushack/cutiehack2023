@@ -47,37 +47,17 @@ export const DIETS = [
   "Halal",
 ];
 
-export const REQUIREMENTS = {
-  photography: {
-    state: false,
-    text: "I agree to photograph.",
-  },
-  inPerson: {
-    state: false,
-    text: "I understand that I will attend the event in person.",
-  },
-};
 export const SOURCES = [
-  { name: "devpost", hidden: false },
-  { name: "ACM discord server", hidden: false },
-  { name: "hackathon tabling", hidden: false },
-  { name: "instagram", hidden: false },
-  { name: "twitter", hidden: false },
-  { name: "facebook", hidden: false },
+  { name: "Devpost", hidden: false },
+  { name: "Discord", hidden: false },
+  { name: "Tabling", hidden: false },
+  { name: "Instagram", hidden: false },
+  { name: "Email", hidden: false },
 ];
-export const JUDGE_AFFILIATION = ["Student", "Professor", "Industry"];
 
 export const AVAILABILITY = [
-  "Friday Morning",
   "Saturday Morning",
-  "Sunday Morning",
-  "Friday Afternoon",
   "Saturday Afternoon",
-  "Sunday Afternoon",
-  "Friday Evening",
   "Saturday Evening",
-  "Sunday Evening",
-  "Friday Night",
   "Saturday Night",
-  "Sunday Night",
 ];
