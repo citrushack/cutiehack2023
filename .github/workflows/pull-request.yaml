@@ -66,6 +66,7 @@ jobs:
           project: ./
           browser: chrome
           headed: true
+          headless: false
           build: npm run build
           start: npm run start
           wait-on: "http://localhost:3010"
