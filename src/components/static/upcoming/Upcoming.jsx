@@ -52,10 +52,10 @@ const Upcoming = () => {
       </div>
       <div className="z-10 mb-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
         <div className="flex flex-col md:flex-row items-center gap-2 md:gap-3 w-fit">
-          <Apply text="Participant" link="/forms/participants" />
+          <Apply text="Participant" link="/form/participant" />
           <div className="flex items-center gap-3 w-fit">
-            <Apply text="Mentor" link="/forms/mentors" />
-            <Apply text="Volunteer" link="/forms/volunteers" />
+            <Apply text="Mentor" link="/form/mentor" />
+            <Apply text="Volunteer" link="/form/volunteer" />
           </div>
         </div>
       </div>
