@@ -153,7 +153,7 @@ const Table = ({
                                   ? element.link !== "No Link" && (
                                       <Link
                                         href={element.link}
-                                        className="w-11/12 flex items-center m-0 p-0 text-black no-underline hover:!text-hackathon-blue-100 text-sm"
+                                        className="w-11/12 flex items-center m-0 p-0 text-white no-underline hover:!text-hackathon-blue-100 text-sm"
                                       >
                                         {ICONS[element.name]}
                                         <p className="truncate w-11/12 ml-1 mb-0">
