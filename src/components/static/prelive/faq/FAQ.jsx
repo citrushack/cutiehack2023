@@ -10,7 +10,9 @@ const FAQ = () => {
         return (
           <>
             <Accordion.Item eventKey={index}>
-              <Accordion.Button>{faq.question}</Accordion.Button>
+              <Accordion.Button className="focus:!shadow-none">
+                {faq.question}
+              </Accordion.Button>
               <Accordion.Body className="text-white">
                 {faq.answer}
               </Accordion.Body>
