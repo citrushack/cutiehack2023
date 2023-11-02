@@ -1,5 +1,5 @@
 export const CONFIG = {
-  name: "HACKATHON",
+  name: "Cutie Hack",
   email: "contact.acmucr@gmail.com",
   year: "2024",
   date: new Date("November 18, 2023 8:00:00"),
