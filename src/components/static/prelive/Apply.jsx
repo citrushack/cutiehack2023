@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Apply = ({ text, link }) => {
   return (
-    <div className="text-base md:text-2xl font-bold flex items-center text-white">
+    <div className="text-sm md:text-2xl font-bold flex items-center text-white">
       Apply to&nbsp;
       <Link
         href={link}

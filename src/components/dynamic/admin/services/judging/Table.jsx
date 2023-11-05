@@ -22,7 +22,7 @@ const Table = ({ data }) => {
                       key={index}
                       href={link.link}
                       target="_blank"
-                      className="m-0 p-0 text-black no-underline hover:!text-hackathon-blue-100 text-xl"
+                      className="m-0 p-0 text-white no-underline hover:!text-hackathon-blue-100 text-xl"
                     >
                       {ICONS[link.name]}
                     </Link>
