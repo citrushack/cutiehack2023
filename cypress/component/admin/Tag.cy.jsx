@@ -11,7 +11,7 @@ describe("Tag", () => {
     cy.get('[data-cy="Accept-tag"]').contains("Accept");
     cy.get('[data-cy="Accept-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-green-bg",
+      "bg-hackathon-tags-green-bg/20",
       "text-hackathon-tags-green-text",
       "hover:shadow-[inset_0px_0px_0px_2px_#00AFB9]"
     );
@@ -29,7 +29,7 @@ describe("Tag", () => {
     cy.get('[data-cy="Pending-tag"]').contains("Pending");
     cy.get('[data-cy="Pending-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-yellow-bg",
+      "bg-hackathon-tags-yellow-bg/20",
       "text-hackathon-tags-yellow-text",
       "hover:shadow-[inset_0px_0px_0px_2px_#FFB81C]"
     );
@@ -47,7 +47,7 @@ describe("Tag", () => {
     cy.get('[data-cy="Reject-tag"]').contains("Reject");
     cy.get('[data-cy="Reject-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-red-bg",
+      "bg-hackathon-tags-red-bg/20",
       "text-hackathon-tags-red-text",
       "hover:shadow-[inset_0px_0px_0px_2px_#F07167]"
     );
@@ -72,7 +72,7 @@ describe("Tag", () => {
     cy.get('[data-cy="Accept-tag"]').contains("Accept");
     cy.get('[data-cy="Accept-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-green-bg",
+      "bg-hackathon-tags-green-bg/20",
       "text-hackathon-tags-green-text",
       "border-2",
       "border-black",
@@ -91,7 +91,7 @@ describe("Tag", () => {
     cy.get('[data-cy="Accept-tag"]').contains("Accept");
     cy.get('[data-cy="Accept-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-green-bg",
+      "bg-hackathon-tags-green-bg/20",
       "text-hackathon-tags-green-text"
     );
     cy.get('[data-cy="Accept-tag"]').should(
