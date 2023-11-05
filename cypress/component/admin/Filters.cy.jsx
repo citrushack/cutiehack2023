@@ -93,6 +93,6 @@ describe("Filters Component", () => {
       .then(() => expect(setObjects).to.be.called);
     cy.get('[data-cy="accept-filter"]')
       .get("div")
-      .should("have.class", "bg-cutie-blue-200", "text-white");
+      .should("have.class", "bg-white", "text-white");
   });
 });
