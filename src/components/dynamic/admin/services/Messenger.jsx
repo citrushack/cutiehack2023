@@ -76,7 +76,7 @@ const Messenger = () => {
           <Filters filters={filters} setFilters={setFilters} />
         </div>
         <div className="flex items-center my-1">
-          <p className="text-lg font-extrabold  text-white mr-5 my-0">
+          <p className="text-lg font-extrabold text-white mr-5 my-0">
             status:
           </p>
           <Filters filters={statuses} setFilters={setStatuses} />
