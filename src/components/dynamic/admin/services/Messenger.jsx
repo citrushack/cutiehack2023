@@ -72,11 +72,11 @@ const Messenger = () => {
       <div className="flex flex-col pb-3 pt-4 h-full items-stretch justify-between">
         <Title title="Messenger" />
         <div className="flex items-center my-1">
-          <p className="text-lg font-extrabold mr-1 my-0">to:</p>
+          <p className="text-lg font-extrabold text-white mr-1 my-0">to:</p>
           <Filters filters={filters} setFilters={setFilters} />
         </div>
         <div className="flex items-center my-1">
-          <p className="text-lg font-extrabold mr-5 my-0">status:</p>
+          <p className="text-lg font-extrabold text-white mr-5 my-0">status:</p>
           <Filters filters={statuses} setFilters={setStatuses} />
         </div>
         <Input
