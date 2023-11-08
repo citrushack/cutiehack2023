@@ -8,6 +8,7 @@ import Event from "./Event";
 import axios from "axios";
 import Modal from "./Modal";
 import { LABELS } from "@/data/dynamic/admin/Calendar";
+import CustomHeader from "./CustomHeader";
 
 const mLocalizer = momentLocalizer(moment);
 
@@ -80,6 +81,9 @@ const CalendarEvents = () => {
             toolbar: (props) => (
               <Toolbar {...props} events={events} setEvents={setEvents} />
             ),
+            month: {
+              header: CustomHeader,
+            },
           }}
           eventPropGetter={(event) => {
             return { className: event.color };
