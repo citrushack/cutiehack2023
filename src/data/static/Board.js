@@ -42,7 +42,7 @@ export const BOARD = [
       img: placeHolder,
     },
     {
-      name: "Jun",
+      name: "Jun Kim",
       position: "Operations",
       img: Jun,
     },
@@ -52,7 +52,7 @@ export const BOARD = [
       img: Mark,
     },
     {
-      name: "Wilson",
+      name: "Wilson Law",
       position: "Marketing",
       img: placeHolder,
     },
