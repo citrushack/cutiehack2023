@@ -15,8 +15,8 @@ const mappings = {
     hover: "hover:shadow-[inset_0px_0px_0px_2px_#00AFB9]",
   },
   gray: {
-    background: "bg-hackathon-tags-gray-bg/20",
-    text: "text-hackathon-tags-gray-bg",
+    background: "bg-gray-200/20",
+    text: "text-gray-200",
     hover: "hover:shadow-[inset_0px_0px_0px_2px_#969696]",
   },
   purple: {
