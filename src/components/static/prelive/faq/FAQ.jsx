@@ -6,7 +6,7 @@ import Item from "./Item";
 
 const FAQ = () => {
   return (
-    <div className="w-10/12 flex flex-col md:flex-row items-center justify-center">
+    <div className="w-9/12 flex flex-col md:flex-row items-center justify-between">
       <SVG />
       <Accordion className="w-10/12 md:w-1/2 bg-cutie-blue-200 z-50 !rounded-3xl overflow-hidden">
         {FAQdata.map((faq, index) => (

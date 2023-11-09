@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SVG = () => {
   return (
-    <div className="relative flex flex-col w-1/4">
+    <div className="relative flex flex-col w-1/2 md:w-1/4">
       <Image
         src={jellyfish}
         alt="fish"
