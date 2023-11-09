@@ -14,7 +14,15 @@ const Event = ({ event, date }) => {
           {event.start.getMinutes()}{" "}
           {event.start.getHours() >= 12 ? "PM " : "AM "}
         </div>
-        <div className="md:hidden w-full md:w-11/12 grid grid-cols-12 items-center justify-between gap-2 bg-cutie-blue-200/75 rounded-xl px-3">
+        <div
+          className={`${
+            event.start < new Date()
+              ? event.end > new Date()
+                ? "bg-cutie-blue-200"
+                : "opacity-70 bg-cutie-blue-200/75"
+              : "bg-cutie-blue-200/75"
+          } md:hidden w-full md:w-11/12 grid grid-cols-12 items-center justify-between gap-2 rounded-xl px-3`}
+        >
           <div
             className={`col-span-6 py-3 items-center justify-center text-center font-bold`}
           >
@@ -27,7 +35,15 @@ const Event = ({ event, date }) => {
             {event.location}
           </div>
         </div>
-        <div className="hidden w-full md:w-11/12 md:grid grid-cols-12 items-center justify-between gap-2 bg-cutie-blue-200/75 rounded-xl px-3">
+        <div
+          className={`hidden w-full md:w-11/12 md:grid grid-cols-12 items-center justify-between gap-2 ${
+            event.start < new Date()
+              ? event.end > new Date()
+                ? "bg-cutie-blue-100/70"
+                : "opacity-60 bg-cutie-blue-200/75"
+              : "bg-cutie-blue-200/75"
+          } rounded-xl px-3`}
+        >
           <div
             className={`${HEADERS.Event} py-3 items-center justify-center text-center font-bold`}
           >
