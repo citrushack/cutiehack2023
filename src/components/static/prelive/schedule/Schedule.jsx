@@ -8,14 +8,23 @@ import { HEADERS } from "@/data/static/Events";
 const Schedule = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
+    let date;
+    let showDate;
     axios
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`
       )
       .then((response) => {
         const items = response.data.items.map((item) => {
+          if (date === new Date(item.start.dateTime).getDate())
+            showDate = false;
+          else {
+            date = new Date(item.start.dateTime).getDate();
+            showDate = true;
+          }
           item.start = new Date(item.start.dateTime);
           item.end = new Date(item.end.dateTime);
+          item.showDate = showDate;
           return item;
         });
         setEvents(items);
@@ -41,7 +50,7 @@ const Schedule = () => {
         </div>
       </div>
       {events.map((event, index) => (
-        <Event event={event} key={index} />
+        <Event event={event} key={index} date={event.showDate} />
       ))}
     </div>
   );
