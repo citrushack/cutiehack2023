@@ -39,7 +39,7 @@ const Event = ({ event, date }) => {
           className={`hidden w-full md:w-11/12 md:grid grid-cols-12 items-center justify-between gap-2 ${
             event.start < new Date()
               ? event.end > new Date()
-                ? "bg-cutie-blue-100/70"
+                ? "bg-cutie-blue-100/40 animate-bounce-1s"
                 : "opacity-60 bg-cutie-blue-200/75"
               : "bg-cutie-blue-200/75"
           } rounded-xl px-3`}
