@@ -7,7 +7,7 @@ import Upcoming from "@/components/static/upcoming/Upcoming";
 
 const Home = () => {
   return (
-    <>
+    <div className="w-full">
       <title>Cutiehack 2023</title>
       <Release release={RELEASES.STATIC.UPCOMING}>
         <Upcoming />
@@ -21,7 +21,7 @@ const Home = () => {
       <Release release={RELEASES.STATIC.POSTLIVE}>
         <Postlive />
       </Release>
-    </>
+    </div>
   );
 };
 
