@@ -50,10 +50,10 @@ const PRODUCTION = {
   STATIC: {
     UPCOMING: {
       START: new Date("10/08/2023"),
-      END: new Date("10/25/2024"),
+      END: new Date("11/8/2023"),
     },
     PRELIVE: {
-      START: new Date("10/01/2024"),
+      START: new Date("11/09/2023"),
       END: new Date("10/10/2024"),
     },
     LIVE: {
