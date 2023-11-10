@@ -1,11 +1,16 @@
 import { HEADERS } from "@/data/static/Events";
+import { Header } from "./Header";
+
 const Event = ({ event, date }) => {
   return (
     <>
       {date && (
-        <div className="text-cutie-blue-300 text-lg font-bold my-8 flex px-5 items-center rounded-lg bg-cutie-orange text-center justify-center">
-          {event.start.toUTCString().split(" 202")[0]}
-        </div>
+        <>
+          <div className="text-cutie-blue-300 text-lg font-bold my-8 flex px-5 items-center rounded-lg bg-cutie-orange text-center justify-center">
+            {event.start.toUTCString().split(" 202")[0]}
+          </div>
+          <Header />
+        </>
       )}
       <div className="flex flex-col md:flex-row text-white w-full justify-between my-2 md:gap-2 items-start md:items-stretch text-xs md:text-base">
         <div className="md:w-1/12 bg-transparent text-white rounded-xl md:py-3 items-center justify-center text-center flex">
