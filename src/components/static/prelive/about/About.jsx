@@ -3,7 +3,9 @@ import SVG from "./SVG";
 const About = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-8 w-9/12">
+      {/* <div className="flex flex-row justify-center scale-110"> */}
       <SVG />
+      {/* </div> */}
       <div className="w-10/12 md:w-3/5 bg-cutie-blue-200/75 rounded-2xl text-base md:text-xl font-semibold p-[5%] leading-relaxed text-white">
         Cutie Hack is a <span className="text-cutie-orange">12-hour</span>,
         <span className="text-cutie-orange"> beginner-oriented hackathon </span>

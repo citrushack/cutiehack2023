@@ -6,12 +6,19 @@ import Schedule from "./schedule/Schedule";
 
 const Prelive = () => {
   return (
-    <div className="flex flex-col w-full items-center overflow-y-scroll gap-10">
+    <div className="flex flex-col w-full items-center overflow-y-scroll">
       <Landing />
-      <About />
-      <Schedule />
+      <div className="flex flex-row justify-center w-full">
+        <About />
+      </div>
+
+      <div className="flex flex-row justify-center w-full  pt-10">
+        <Schedule />
+      </div>
       {/* <Board /> */}
-      <FAQ />
+      <div className="flex flex-row justify-center w-full pt-10">
+        <FAQ />
+      </div>
     </div>
   );
 };

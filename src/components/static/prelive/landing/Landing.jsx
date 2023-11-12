@@ -9,7 +9,7 @@ import Apply from "../Apply";
 
 const Landing = () => {
   return (
-    <div className="relative font-karla w-full text-white flex flex-col items-center justify-center bg-cutie-blue-300 mb-[8vh]">
+    <div className="relative font-karla w-full text-white flex flex-col items-center justify-center bg-cutie-blue-300">
       <Image src={shine} alt="shine" className="absolute w-full inset-0 z-0" />
       <div className="mt-[10vh] flex flex-col md:flex-row z-10 justify-center h-fit items-center md:items-stretch w-10/12 sm:w-5/6 2xl:w-2/3">
         <div className="flex flex-col w-3/5 items-center md:items-start">
