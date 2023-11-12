@@ -6,6 +6,7 @@ import Event from "./Event";
 
 const Schedule = () => {
   const [events, setEvents] = useState([]);
+
   useEffect(() => {
     let date;
     let showDate;
