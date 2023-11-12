@@ -17,7 +17,7 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="flex lg:hidden w-full bg-white/10 h-12 items-center fixed z-20">
+      <div className="flex lg:hidden w-full bg-cutie-blue-400 h-12 items-center fixed z-20">
         <div
           className="flex items-center hover:cursor-pointer"
           onClick={() => setExpand(!expand)}
@@ -33,11 +33,11 @@ const Navigation = () => {
         </div>
       </div>
       <div
-        className={`z-10 lg:flex lg:w-[12%] ${
+        className={`z-10 lg:flex lg:w-[18%] ${
           expand ? "left-0 h-screen w-1/2 fixed pt-5" : `hidden`
         }`}
       >
-        <div className="bg-white/10 h-full flex flex-col justify-between items-center w-full">
+        <div className="bg-cutie-blue-400 h-full flex flex-col justify-between items-center w-full">
           <Image
             src={LOGO}
             className="w-full px-3"
