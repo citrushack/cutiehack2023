@@ -1,5 +1,5 @@
 export const COMMITTEES = {
-  "UI/UX": [
+  uiux: [
     "Josalyn Chow",
     "Garman Zhen",
     "Anjaline Singh",
@@ -23,7 +23,7 @@ export const COMMITTEES = {
     "Cayla Kawazoe",
     "Zega Zomkee",
   ],
-  Operations: [
+  operations: [
     "Josalyn Chow",
     "Garman Zhen",
     "Anjaline Singh",
@@ -31,7 +31,7 @@ export const COMMITTEES = {
     "Cayla Kawazoe",
     "Zega Zomkee",
   ],
-  Sponsorship: [
+  sponsorship: [
     "Josalyn Chow",
     "Garman Zhen",
     "Anjaline Singh",
