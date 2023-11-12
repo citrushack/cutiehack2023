@@ -13,13 +13,13 @@ const ScrollingText = () => {
   }, []);
 
   return (
-    <div className="text-white w-full text-right font-bold -mb-20">
-      <p className="text-3xl mb-0 text-cutie-orange">create for</p>
-      <div className="h-20 overflow-hidden text-7xl">
+    <div className="text-white w-full text-right font-bold -mb-10 md:-mb-20">
+      <p className="text-xl md:text-3xl mb-0 text-cutie-orange">create for</p>
+      <div className="h-10 md:h-20 overflow-hidden text-2xl md:text-7xl">
         {tracks.map((track, index) => (
           <div
             key={index}
-            className={`duration-500 h-20`}
+            className="duration-500 h-10 md:h-20"
             style={{
               transform: `translateY(${-100 * current}%)`,
             }}
