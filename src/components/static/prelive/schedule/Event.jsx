@@ -7,7 +7,11 @@ const Event = ({ event, date }) => {
       {date && (
         <>
           <div className="text-cutie-blue-300 text-lg font-bold my-8 flex px-5 items-center rounded-lg bg-cutie-orange text-center justify-center">
-            {event.start.toUTCString().split(" 202")[0]}
+            {event.start.toLocaleString("default", {
+              month: "short",
+              weekday: "short",
+              day: "2-digit",
+            })}
           </div>
           <Header />
         </>
