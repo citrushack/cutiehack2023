@@ -8,11 +8,9 @@ const Prelive = () => {
   return (
     <div className="flex flex-col w-full items-center overflow-y-scroll">
       <Landing />
-      <div className="flex flex-row justify-center w-full">
-        <About />
-      </div>
+      <About />
 
-      <div className="flex flex-row justify-center w-full  pt-10">
+      <div className="flex flex-row justify-center w-full pt-10">
         <Schedule />
       </div>
       {/* <Board /> */}
