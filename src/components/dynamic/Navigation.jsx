@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import LOGO from "../../../public/svg/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,12 +8,17 @@ import { TABS } from "@/data/dynamic/Navigation";
 import { usePathname } from "next/navigation";
 import { CONFIG } from "@/data/Config";
 import { BiSolidDownArrow } from "react-icons/bi";
+import NavContext from "./NavContext";
 
 const Navigation = () => {
   const [expand, setExpand] = useState(false);
   const pathName = usePathname();
   const tabs = TABS[pathName.split("/")[1]];
-  const [dropdown, setDropdown] = useState(Object.keys(tabs)[0]);
+  const { dropdown, setDropdown } = useContext(NavContext);
+  useEffect(() => {
+    if (!Object.keys(tabs).includes(dropdown))
+      setDropdown(Object.keys(tabs)[0]);
+  }, []);
 
   return (
     <>
