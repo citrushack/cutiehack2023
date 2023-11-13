@@ -10,5 +10,6 @@ export const COMMITTEES = {
     "Fuyuki Malahom",
     "Isabelle Celo",
     "Anjaline Singh",
+    "Garman Zhen",
   ],
 };
