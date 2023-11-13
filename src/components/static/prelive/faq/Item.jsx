@@ -8,7 +8,7 @@ const Item = ({ index, question, answer, length }) => {
   return (
     <Accordion.Item eventKey={index} className="border-0 !bg-[#48648c]">
       <Accordion.Button
-        className="!bg-[#48648c] text-xs md:text-base text-white after:!bg-none p-3"
+        className="!bg-[#48648c] text-xs md:text-base text-white after:!bg-none p-3 focus:!shadow-none"
         onClick={() => setState(!state)}
       >
         <div className=" flex justify-between items-center w-full">
@@ -16,7 +16,7 @@ const Item = ({ index, question, answer, length }) => {
           <FaChevronDown className={`${state && "rotate-180"} duration-300`} />
         </div>
       </Accordion.Button>
-      <Accordion.Body className="text-white text-xs md:text-base">
+      <Accordion.Body className="text-white text-xs md:text-base !border-0">
         {answer}
       </Accordion.Body>
       {index < length - 1 && (

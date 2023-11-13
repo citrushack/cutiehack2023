@@ -25,6 +25,14 @@ const Schedule = () => {
           item.start = new Date(item.start.dateTime);
           item.end = new Date(item.end.dateTime);
           item.showDate = showDate;
+
+          const [category] = item.description
+            .split("\n")[0]
+            .split("#")
+            .map((item) => item.trim())
+            .filter((item) => item !== "");
+          item.category = category;
+
           return item;
         });
         setEvents(items);

@@ -61,12 +61,12 @@ const Event = ({ event, date }) => {
           <div
             className={`${HEADERS.Type} py-1 rounded-md items-center justify-center text-center bg-cutie-blue-100/40`}
           >
-            {event.description.split("\n")[2]?.split(": ")[1]}
+            {event.category}
           </div>
           <div
             className={`${HEADERS.Description} py-3 items-center justify-center text-center px-4`}
           >
-            {event.description.split("\n")[3]}
+            {event.description.split("\n")[1]}
           </div>
           <div
             className={`${HEADERS.Location} items-center justify-center text-center py-1 rounded-md`}
