@@ -13,7 +13,7 @@ const Footer = () => {
 
         <div className="text-xl text-white flex items-center">
           made with <BsHeartFill className="mx-2 text-cutie-blue-100" /> by the
-          Rose Hack team at UCR
+          Cutie Hack team at UCR
         </div>
         <div className="flex gap-2 mt-2">
           {SOCIAL.map((social, index) => (
