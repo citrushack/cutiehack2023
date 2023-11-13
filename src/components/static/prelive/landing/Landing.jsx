@@ -7,11 +7,11 @@ import submarine from "../../../../../public/svg/submarine.svg";
 import bubble from "../../../../../public/svg/bubble.svg";
 import Countdown from "../../Countdown";
 import Apply from "../Apply";
-import { signIn, useSession } from "next-auth/react";
-import Link from "../../Link";
+// import { signIn, useSession } from "next-auth/react";
+// import Link from "../../Link";
 
 const Landing = () => {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
   return (
     <div className="relative font-karla w-full text-white flex flex-col items-center justify-center bg-cutie-blue-300 mb-[8vh]">
       <Image src={shine} alt="shine" className="absolute w-full inset-0 z-0" />
@@ -55,7 +55,7 @@ const Landing = () => {
       </div>
       <div className="z-10 mb-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
         <div className="flex flex-col items-center gap-2 md:gap-3 w-fit">
-          {session &&
+          {/* {session &&
           Object.keys(session.user.roles).includes("participants") ? (
             <Link text="dashbaord" link="/user" />
           ) : (
@@ -68,8 +68,9 @@ const Landing = () => {
               />
               <Apply text="Participate" link="/form/participant" />
             </div>
-          )}
+          )} */}
           <div className="flex items-center gap-3 w-fit">
+            <Apply text="Participate" link="/form/participant" />
             <Apply text="Mentor" link="/form/mentor" />
             <Apply text="Volunteer" link="/form/volunteer" />
           </div>
