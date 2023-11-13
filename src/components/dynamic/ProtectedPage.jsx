@@ -57,7 +57,7 @@ const ProtectedPage = ({ children }) => {
 
   return (
     <>
-      {status === "loading" && <Loading />}
+      {status === "loading" && pathName !== "/" && <Loading />}
       {confirmed && (
         <>
           <title>{title}</title>
