@@ -1,3 +1,4 @@
+import Judges from "../judges/Judges";
 import About from "./about/About";
 import Committees from "./committees/Committees";
 // import Board from "./board/Board";
@@ -14,6 +15,7 @@ const Prelive = () => {
       <Schedule />
       <Tracks />
       <Committees />
+      <Judges />
       <FAQ />
       {/* <Board /> */}
     </div>
