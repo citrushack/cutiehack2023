@@ -72,7 +72,7 @@ const ProtectedPage = ({ children }) => {
       {confirmed && (
         <>
           <title>{title}</title>
-          <div className="flex justify-center items-start w-full bg-hackathon-page h-screen pt-12 lg:pt-0 z-0">
+          <div className="flex justify-center items-start w-full bg-cutie-blue-300 h-screen pt-12 lg:pt-0 z-0">
             <div className={`w-[96%] h-full`}>{children}</div>
           </div>
         </>
