@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import logo from "../../../../../public/svg/logo.svg";
@@ -6,11 +7,15 @@ import submarine from "../../../../../public/svg/submarine.svg";
 import bubble from "../../../../../public/svg/bubble.svg";
 import Countdown from "../../Countdown";
 import Apply from "../Apply";
+import { signIn, useSession } from "next-auth/react";
+import Link from "../../Link";
 
 const Landing = () => {
+  const { data: session } = useSession();
   return (
     <div className="relative font-karla w-full text-white flex flex-col items-center justify-center bg-cutie-blue-300 mb-[8vh]">
       <Image src={shine} alt="shine" className="absolute w-full inset-0 z-0" />
+
       <div className="mt-[10vh] flex flex-col md:flex-row z-10 justify-center h-fit items-center md:items-stretch w-10/12 sm:w-5/6 2xl:w-2/3">
         <div className="flex flex-col w-3/5 items-center md:items-start">
           <Image
@@ -49,8 +54,21 @@ const Landing = () => {
         <Countdown />
       </div>
       <div className="z-10 mb-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
-        <div className="flex flex-col md:flex-row items-center gap-2 md:gap-3 w-fit">
-          <Apply text="Participate" link="/form/participant" />
+        <div className="flex flex-col items-center gap-2 md:gap-3 w-fit">
+          {session &&
+          Object.keys(session.user.roles).includes("participants") ? (
+            <Link text="dashbaord" link="/user" />
+          ) : (
+            <div className="flex flex-col md:flex-row gap-2 items-center">
+              <Link
+                text="login"
+                onClick={() => {
+                  signIn("google");
+                }}
+              />
+              <Apply text="Participate" link="/form/participant" />
+            </div>
+          )}
           <div className="flex items-center gap-3 w-fit">
             <Apply text="Mentor" link="/form/mentor" />
             <Apply text="Volunteer" link="/form/volunteer" />
