@@ -12,13 +12,13 @@ const Input = ({
 }) => {
   return (
     <div className="flex flex-col w-full">
-      <p className="mb-1 font-semibold">
+      <p className="mb-1 font-semibold text-white">
         {title}
         {required && <span className="text-red-500">*</span>}
       </p>
       <input
         disabled={!editable}
-        className="truncate disabled:border-0 border-b pb-1 border-white pl-3 w-full focus:outline-none placeholder:text-hackathon-gray-200 bg-transparent"
+        className="truncate disabled:border-0 border-b pb-1 text-white border-white pl-3 w-full focus:outline-none placeholder:text-hackathon-gray-200 bg-transparent"
         type={type}
         name={name}
         placeholder={placeholder}

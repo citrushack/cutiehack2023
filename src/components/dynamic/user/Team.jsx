@@ -106,7 +106,7 @@ const Team = ({ user, setUser }) => {
   }, [user.team]);
 
   return (
-    <div className="bg-white rounded-lg p-4 gap-3 m-2 overflow-scroll max-h-[70vh]">
+    <div className="bg-white/10 rounded-lg p-4 gap-3 m-2 overflow-scroll max-h-[70vh]">
       {user.team && !team && <Loading />}
       {team && (
         <>
@@ -167,7 +167,7 @@ const Team = ({ user, setUser }) => {
           <div className="mt-3 pt-2">
             <p className="mb-1 font-semibold">Team ID</p>
             <p className="pl-3 mb-0 flex items-center">
-              {user.team}{" "}
+              {user.team}
               <BiSolidCopy
                 onClick={handleCopy}
                 className="text-lg text-gray-400 ml-2 hover:cursor-pointer hover:text-hackathon-blue-100"
