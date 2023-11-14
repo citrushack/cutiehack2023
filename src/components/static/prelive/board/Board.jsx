@@ -1,6 +1,6 @@
 import Title from "@/components/dynamic/admin/Title";
 import { BOARD } from "@/data/static/Board";
-import Person from "./Person";
+import Person from "../../Person";
 
 const Board = () => {
   return (
