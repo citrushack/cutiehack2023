@@ -56,10 +56,10 @@ const Landing = () => {
         <Countdown />
       </div>
       <div className="z-10 mb-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
-        <div className="flex flex-col items-center gap-2 md:gap-3 w-fit">
+        <div className="flex flex-col gap-2 md:gap-3 w-fit">
           {session &&
             Object.keys(session.user.roles).includes("participants") && (
-              <div className="flex w-full gap-2 my-2 flex-wrap justify-center">
+              <div className="flex w-full gap-2 my-2 flex-wrap justify-start">
                 <Link
                   text="hacker portal"
                   link="/user"
@@ -80,10 +80,7 @@ const Landing = () => {
               </div>
             )}
           <div className="flex items-center gap-3 w-fit">
-            {session &&
-              !Object.keys(session.user.roles).includes("participants") && (
-                <Apply text="Participate" link="/form/participant" />
-              )}
+            <Apply text="Participate" link="/form/participant" />
             <Apply text="Mentor" link="/form/mentor" />
             <Apply text="Volunteer" link="/form/volunteer" />
           </div>
