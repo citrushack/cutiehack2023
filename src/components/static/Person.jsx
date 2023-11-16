@@ -1,15 +1,18 @@
 import Image from "next/image";
+import Col from "react-bootstrap/Col";
 
 const Person = ({ img, name, position, start, sm }) => {
   return (
-    <div
-      className={`flex flex-col items-center justify-center text-white p-4 justify-self-center self-start ${
-        start === 3
-          ? "col-start-1 md:col-start-2 lg:col-start-3"
-          : start === 4 && "col-start-2 md:col-start-3 lg:col-start-4"
-      }`}
+    <Col
+      xs={6}
+      md={3}
+      lg={2}
+      className="flex flex-col items-center justify-center text-white p-4 justify-self-center self-start"
     >
-      <Image src={img} className="rounded-full w-32 object-cover" />
+      <Image
+        src={img}
+        className="rounded-full w-32 object-cover aspect-square"
+      />
       <div className="text-lg font-bold mt-1 whitespace-nowrap">{name}</div>
       <div
         className={`${
@@ -23,7 +26,7 @@ const Person = ({ img, name, position, start, sm }) => {
           {sm}
         </div>
       )}
-    </div>
+    </Col>
   );
 };
 
