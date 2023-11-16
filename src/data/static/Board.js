@@ -1,4 +1,3 @@
-import placeHolder from "../../../public/board/placeholder.webp";
 import Menthy from "../../../public/board/Menthy.webp";
 import Divyank from "../../../public/board/Divyank.webp";
 import Minnoli from "../../../public/board/Minnoli.webp";
@@ -9,6 +8,9 @@ import Chloe from "../../../public/board/Chloe.webp";
 import Shivam from "../../../public/board/Shivam.webp";
 import Jun from "../../../public/board/Jun.webp";
 import Freddy from "../../../public/board/Freddy.webp";
+import Prathmesh from "../../../public/board/Prathmesh.webp";
+import Wilson from "../../../public/board/Wilson.webp";
+import Saachi from "../../../public/board/Saachi.webp";
 
 export const BOARD = [
   [
@@ -21,7 +23,7 @@ export const BOARD = [
     {
       name: "Prathmesh Jain",
       position: "Director",
-      img: placeHolder,
+      img: Prathmesh,
       start: 4,
     },
   ],
@@ -39,7 +41,7 @@ export const BOARD = [
     {
       name: "Saachi Raju",
       position: "Operations",
-      img: placeHolder,
+      img: Saachi,
     },
     {
       name: "Jun Kim",
@@ -54,12 +56,7 @@ export const BOARD = [
     {
       name: "Wilson Law",
       position: "Marketing",
-      img: placeHolder,
-    },
-    {
-      name: "Namit Mankad",
-      position: "UI/UX",
-      img: placeHolder,
+      img: Wilson,
     },
     {
       name: "Chloe Xu",
