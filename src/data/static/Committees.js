@@ -2,6 +2,7 @@ export const COMMITTEES = {
   "UI/UX": ["Josalyn Chow", "Tenzin Zomkee", "Garman Zhen", "Kaitlin Ching"],
   Operations: ["Allison Pham", "Akanksh Divyananda"],
   Sponsorship: ["Brian Uong", "David Ranai"],
+  Marketing: ["Jason Lin"],
   "Software Engineering": [
     "Fardin Zaman",
     "Sean Quiambao",
