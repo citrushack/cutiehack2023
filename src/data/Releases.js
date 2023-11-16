@@ -88,9 +88,9 @@ const PRODUCTION = {
     "/form/admin": new Date("10/01/2023"),
     "/form/committee": new Date("10/01/2023"),
 
-    "/user/checkin": new Date("10/01/2024"),
-    "/user/dashboard": new Date("10/01/2024"),
-    "/user/join": new Date("10/01/2024"),
+    "/user/checkin": new Date("10/01/2023"),
+    "/user/dashboard": new Date("10/01/2023"),
+    "/user/join": new Date("10/01/2023"),
   },
 };
 
