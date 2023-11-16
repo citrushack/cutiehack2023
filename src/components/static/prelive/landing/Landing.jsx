@@ -11,6 +11,7 @@ import { useSession } from "next-auth/react";
 import Link from "../../Link";
 import { FaDiscord, FaInstagram } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
+import { signIn } from "next-auth/react";
 
 const Landing = () => {
   const { data: session } = useSession();
@@ -57,7 +58,7 @@ const Landing = () => {
       </div>
       <div className="z-10 mb-4 flex w-5/6 2xl:w-2/3 justify-center md:justify-start">
         <div className="flex flex-col gap-2 md:gap-3 w-fit">
-          {session &&
+          {session ? (
             Object.keys(session.user.roles).includes("participants") && (
               <div className="flex w-full gap-2 my-2 flex-wrap justify-start">
                 <Link
@@ -78,7 +79,14 @@ const Landing = () => {
                   icon={<FaInstagram className="ml-2" />}
                 />
               </div>
-            )}
+            )
+          ) : (
+            <Link
+              text="login"
+              onClick={() => signIn("google")}
+              icon={<FaDiscord className="ml-2" />}
+            />
+          )}
           <div className="flex items-center gap-3 w-fit">
             <Apply text="Participate" link="/form/participant" />
             <Apply text="Mentor" link="/form/mentor" />
