@@ -7,6 +7,13 @@ import Eliot from "../../../public/judges/Eliot.webp";
 import Jakin from "../../../public/judges/Jakin.webp";
 import Mariam from "../../../public/judges/Mariam.webp";
 import Minsoo from "../../../public/judges/Minsoo.webp";
+import Henry from "../../../public/judges/Henry.webp";
+import Yogitha from "../../../public/judges/Yogitha.webp";
+import Kanin from "../../../public/judges/Kanin.webp";
+import Paulian from "../../../public/judges/Paulian.webp";
+import Ashley from "../../../public/judges/Ashley.webp";
+import Tiana from "../../../public/judges/Tiana.webp";
+import Evelyn from "../../../public/judges/Evelyn.webp";
 
 export const JUDGES = [
   {
@@ -45,6 +52,12 @@ export const JUDGES = [
     img: Eliot,
   },
   {
+    name: "Kanin Liang",
+    position: "Former Cutiehack Operations Lead",
+    img: Kanin,
+  },
+  { name: "Yogitha Shastri", position: "BearHack Director", img: Yogitha },
+  {
     name: "Minsoo Kim",
     position: "Former Cutiehack SWE Lead",
     img: Minsoo,
@@ -53,5 +66,30 @@ export const JUDGES = [
     name: "Mariam Golwalla",
     position: "Former Cutiehack Director",
     img: Mariam,
+  },
+  {
+    name: "Henry Zheng",
+    position: "Former Cutiehack Director",
+    img: Henry,
+  },
+  {
+    name: "Paulian Le",
+    position: "Former Cutiehack Operations Lead",
+    img: Paulian,
+  },
+  {
+    name: "Ashley Tsai",
+    position: "Design at UCR President",
+    img: Ashley,
+  },
+  {
+    name: "Tiana Nguyen",
+    position: "DesignVerse Director",
+    img: Tiana,
+  },
+  {
+    name: "Evelyn Aguirre Vargas",
+    position: "Bearhack Director",
+    img: Evelyn,
   },
 ];

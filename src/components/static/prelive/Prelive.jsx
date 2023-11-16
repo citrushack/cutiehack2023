@@ -1,7 +1,7 @@
 import Judges from "../judges/Judges";
 import About from "./about/About";
 import Committees from "./committees/Committees";
-// import Board from "./board/Board";
+import Board from "./board/Board";
 import FAQ from "./faq/FAQ";
 import Landing from "./landing/Landing";
 import Schedule from "./schedule/Schedule";
@@ -15,11 +15,11 @@ const Prelive = () => {
       <About />
       <Schedule />
       <Tracks />
+      <Board />
       <Committees />
       <Judges />
       <FAQ />
       <Footer />
-      {/* <Board /> */}
     </div>
   );
 };
