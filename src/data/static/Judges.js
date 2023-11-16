@@ -89,7 +89,7 @@ export const JUDGES = [
   },
   {
     name: "Evelyn Aguirre Vargas",
-    position: "Bearhack Director",
+    position: "Former Bearhack Director",
     img: Evelyn,
   },
 ];
