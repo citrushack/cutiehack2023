@@ -40,7 +40,7 @@ const Navigation = () => {
         <div className="bg-cutie-blue-400 h-full flex flex-col justify-between items-center w-full">
           <Image
             src={LOGO}
-            className="w-full px-3"
+            className="w-full px-3 hidden lg:block"
             alt={`${CONFIG.name} Logo`}
           />
 
