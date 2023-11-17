@@ -18,10 +18,10 @@ const Upcoming = () => {
             className="w-9/12 sm:w-2/3 md:w-1/2 h-full object-contain"
           />
           <p className="w-fit text-2xl sm:text-4xl md:text-6xl 2xl:text-9xl text-white font-bold mb-0 md:mb-1">
-            November 18th
+            COMING SOON
           </p>
           <p className="text-xl md:text-3xl text-cutie-orange font-bold my-1 md:my-3">
-            VIRTUAL ONLY
+            November 18th, 2023
           </p>
         </div>
         <div className="hidden md:block w-2/5 h-full relative">

@@ -26,8 +26,11 @@ const Landing = () => {
             alt="logo"
             className="w-9/12 sm:w-2/3 md:w-1/2 h-full object-contain"
           />
+          <p className="text-base md:text-5xl text-white font-bold my-1 md:my-3">
+            November 18th
+          </p>
           <p className="text-base md:text-3xl text-cutie-orange font-bold my-1 md:my-3">
-            November 18th, 2023
+            VIRTUAL ONLY
           </p>
         </div>
         <div className="hidden md:block w-2/5 h-full relative">
