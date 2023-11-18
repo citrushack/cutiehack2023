@@ -28,23 +28,24 @@ const Countdown = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const diff = CONFIG.date - new Date();
+      const diff = CONFIG.date.getTime() - new Date().getTime();
+
       setTime({
         days:
-          Math.ceil(diff / (1000 * 60 * 60 * 24)) > 0
-            ? Math.ceil(diff / (1000 * 60 * 60 * 24))
+          Math.floor(diff / (1000 * 60 * 60 * 24)) > 0
+            ? Math.floor(diff / (1000 * 60 * 60 * 24))
             : 0,
         hours:
-          Math.ceil((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) > 0
-            ? Math.ceil((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+          Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) > 0
+            ? Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
             : 0,
         minutes:
-          Math.ceil((diff % (1000 * 60 * 60)) / (1000 * 60)) > 0
-            ? Math.ceil((diff % (1000 * 60 * 60)) / (1000 * 60))
+          Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)) > 0
+            ? Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
             : 0,
         seconds:
-          Math.ceil((diff % (1000 * 60 * 60)) / 1000) % 60 > 0
-            ? Math.ceil((diff % (1000 * 60 * 60)) / 1000) % 60
+          Math.floor((diff % (1000 * 60 * 60)) / 1000) % 60 > 0
+            ? Math.floor((diff % (1000 * 60 * 60)) / 1000) % 60
             : 0,
       });
     }, 1000);
