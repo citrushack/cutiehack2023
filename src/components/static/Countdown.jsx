@@ -31,10 +31,22 @@ const Countdown = () => {
       const diff = CONFIG.date.getTime() - new Date().getTime();
 
       setTime({
-        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-        minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((diff % (1000 * 60 * 60)) / 1000) % 60,
+        days:
+          Math.floor(diff / (1000 * 60 * 60 * 24)) > 0
+            ? Math.floor(diff / (1000 * 60 * 60 * 24))
+            : 0,
+        hours:
+          Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) > 0
+            ? Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+            : 0,
+        minutes:
+          Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)) > 0
+            ? Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+            : 0,
+        seconds:
+          Math.floor((diff % (1000 * 60 * 60)) / 1000) % 60 > 0
+            ? Math.floor((diff % (1000 * 60 * 60)) / 1000) % 60
+            : 0,
       });
     }, 1000);
 
