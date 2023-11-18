@@ -1,5 +1,6 @@
 import { HEADERS } from "@/data/static/Events";
 import { Header } from "./Header";
+import Link from "next/link";
 
 const Event = ({ event, date }) => {
   return (
@@ -41,7 +42,16 @@ const Event = ({ event, date }) => {
           <div
             className={`col-span-6 items-center justify-center text-center bg-cutie-blue-100/40 py-1 rounded-md`}
           >
-            {event.location}
+            {event.location.includes("https:") ? (
+              <Link
+                className="!text-cutie-orange font-bold hover:!text-orange"
+                href={event.location}
+              >
+                Online
+              </Link>
+            ) : (
+              event.location
+            )}
           </div>
         </div>
         <div
@@ -71,7 +81,16 @@ const Event = ({ event, date }) => {
           <div
             className={`${HEADERS.Location} items-center justify-center text-center py-1 rounded-md`}
           >
-            {event.location}
+            {event.location.includes("https:") ? (
+              <Link
+                className="!text-cutie-orange font-bold hover:!text-orange"
+                href={event.location}
+              >
+                Online
+              </Link>
+            ) : (
+              event.location
+            )}
           </div>
         </div>
       </div>
