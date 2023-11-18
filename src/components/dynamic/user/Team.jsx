@@ -27,7 +27,7 @@ const Team = ({ user, setUser }) => {
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(
-      `${process.env.NEXTAUTH_URL}/user/join/${user.team}`
+      `${process.env.NEXT_PUBLIC_URL}/user/join/${user.team}`
     );
     toast("✅ Successfully copied join link!");
   };
