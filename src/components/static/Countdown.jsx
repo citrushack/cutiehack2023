@@ -28,8 +28,7 @@ const Countdown = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const diff = (CONFIG.date.getTime()) - (new Date()).getTime();
-
+      const diff = CONFIG.date.getTime() - new Date().getTime();
 
       setTime({
         days: Math.floor(diff / (1000 * 60 * 60 * 24)),
