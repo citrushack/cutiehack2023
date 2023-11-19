@@ -120,7 +120,14 @@ const Team = ({ user, setUser }) => {
             editable={edit}
             placeholder="no team name"
           />
-
+          <Input
+            name="table"
+            type="text"
+            title="Team Table"
+            value={team.table}
+            editable={false}
+            placeholder="no team table"
+          />
           <Input
             name="github"
             type="text"
