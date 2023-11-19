@@ -10,6 +10,7 @@ import Apply from "../Apply";
 import { useSession } from "next-auth/react";
 import Link from "../../Link";
 import { FaDiscord, FaInstagram } from "react-icons/fa";
+import { SiDevpost } from "react-icons/si";
 import { FaCode } from "react-icons/fa6";
 import { signIn } from "next-auth/react";
 
@@ -80,6 +81,11 @@ const Landing = () => {
                   text="instagram"
                   link="https://www.instagram.com/cutiehack_ucr/"
                   icon={<FaInstagram className="ml-2" />}
+                />
+                <Link
+                  text="devpost"
+                  link="https://cutiehack2023.devpost.com/"
+                  icon={<SiDevpost className="ml-2" />}
                 />
               </div>
             )
