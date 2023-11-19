@@ -14,6 +14,8 @@ import Paulian from "../../../public/judges/Paulian.webp";
 import Ashley from "../../../public/judges/Ashley.webp";
 import Tiana from "../../../public/judges/Tiana.webp";
 import Evelyn from "../../../public/judges/Evelyn.webp";
+import Ryan from "../../../public/judges/Ryan.webp";
+import Vinz from "../../../public/judges/Vinz.webp";
 
 export const JUDGES = [
   {
@@ -25,6 +27,12 @@ export const JUDGES = [
     name: "Walid Najjar",
     position: "CSE Professor",
     img: Walid,
+  },
+
+  {
+    name: "Ryan Rusich",
+    position: "CSE Lecturer",
+    img: Ryan,
   },
   {
     name: "Westin Montano",
@@ -91,5 +99,10 @@ export const JUDGES = [
     name: "Evelyn Aguirre Vargas",
     position: "Former Bearhack Director",
     img: Evelyn,
+  },
+  {
+    name: "Vinz Angelo Madrigal",
+    position: "Former ACM President",
+    img: Vinz,
   },
 ];

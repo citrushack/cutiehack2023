@@ -12,6 +12,7 @@ const Home = () => {
       <Release release={RELEASES.STATIC.UPCOMING}>
         <Upcoming />
       </Release>
+
       <Release release={RELEASES.STATIC.PRELIVE}>
         <Prelive />
       </Release>
