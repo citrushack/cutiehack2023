@@ -105,12 +105,13 @@ export async function GET(req) {
     const snapshot = await getDoc(doc(db, "teams", team));
     if (!snapshot.exists())
       return res.json({ message: "Invalid Team ID" }, { status: 500 });
-    const { name, links, members } = snapshot.data();
+    const { name, links, members, table } = snapshot.data();
     return res.json(
       {
         message: "OK",
         items: {
           name: name,
+          table: table,
           github: links.github,
           devpost: links.devpost,
           figma: links.figma,
