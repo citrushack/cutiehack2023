@@ -25,6 +25,8 @@ const Toolbar = ({ data, setData }) => {
     rotations: "",
     input: "",
   });
+  const [assignments, setAssignments] = useState([]);
+  const [toggle, setToggle] = useState(false);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -153,6 +155,22 @@ const Toolbar = ({ data, setData }) => {
       });
     }
 
+    const formattedJudges = {};
+
+    judges.forEach((judge) => {
+      formattedJudges[judge.name] = [];
+    });
+
+    teams.forEach((team) => {
+      team.rounds.forEach((judges, index) => {
+        judges.forEach((judge) => {
+          formattedJudges[judge.name].push(team.table);
+        });
+      });
+    });
+
+    setAssignments(formattedJudges);
+
     setData(teams);
     axios.put("/api/judging", { teams }).then(() => toast("✅ Rounds Saved!"));
     setInput({
@@ -231,6 +249,11 @@ const Toolbar = ({ data, setData }) => {
             onClick={handleReset}
             disabled={data === null || []}
           />
+          <Button
+            color="green"
+            text="change view"
+            onClick={() => setToggle(true)}
+          />
         </div>
         <div className="flex">
           {tags.map((tag, index) => (
@@ -250,6 +273,18 @@ const Toolbar = ({ data, setData }) => {
           showLabel={false}
         />
       </form>
+      {toggle && (
+        <div className="absolute bg-white top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[75vh] p-3">
+          {Object.entries(assignments).map(([name, assignment], index) => (
+            <div key={index}>
+              <p>
+                {name}: {assignment.join(", ")}
+              </p>
+            </div>
+          ))}
+          <button onClick={() => setToggle(false)}>close</button>
+        </div>
+      )}
     </>
   );
 };
